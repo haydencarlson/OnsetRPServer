@@ -1,0 +1,27 @@
+{
+	"servername": "Bulbhost.com",
+	"gamemode": "Reee",
+	"website_url": "https://bulbhost.com",
+	"ipaddress": "206.81.7.252",
+	"port": 7777,
+	"maxplayers": 100,
+	"password": "",
+	"timeout": 15000,
+	"iplimit": 5,
+	"masterlist": true,
+	"plugins": [
+		"mariadb"
+	],
+	"packages": [
+		"i18n",
+		"dialogui",
+		"onsetrp",
+        	"trafficlights"
+	],
+	"stream_distance": 12000.0,
+	"stream_update_rate": 0.05,
+	"voice": true,
+	"voice_sample_rate": 24000,
+	"voice_distance": 4000.0,
+	"voice_spatialization": true
+}

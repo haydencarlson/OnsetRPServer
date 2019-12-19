@@ -1,0 +1,37 @@
+"AppState"
+{
+	"appid"		"1204170"
+	"Universe"		"1"
+	"name"		"Onset Dedicated Server"
+	"StateFlags"		"4"
+	"installdir"		"Onset Dedicated Server"
+	"LastUpdated"		"1576432970"
+	"UpdateResult"		"0"
+	"SizeOnDisk"		"75139095"
+	"buildid"		"4490684"
+	"LastOwner"		"76561199484570705"
+	"BytesToDownload"		"2816"
+	"BytesDownloaded"		"2816"
+	"AutoUpdateBehavior"		"0"
+	"AllowOtherDownloadsWhileRunning"		"0"
+	"ScheduledAutoUpdate"		"0"
+	"InstalledDepots"
+	{
+		"1006"
+		{
+			"manifest"		"5876061545293758389"
+		}
+		"1204171"
+		{
+			"manifest"		"8142856677671837833"
+		}
+	}
+	"MountedDepots"
+	{
+		"1006"		"5876061545293758389"
+		"1204171"		"8142856677671837833"
+	}
+	"UserConfig"
+	{
+	}
+}
