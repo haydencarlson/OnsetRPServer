@@ -2,4 +2,4 @@ mariadb_log.txt
 *.dll
 *.vdf
 *.txt
-s./erver_config.json
+server_config.json
