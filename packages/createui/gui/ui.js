@@ -1,5 +1,6 @@
 function Clear(){
 	$(".option").remove();
+	$(".text-container").remove();
 }
 
 function OnCreate(name, id) {
@@ -18,6 +19,14 @@ function InsertOption(id, title, description, button_text){
 
 function InsertText(id, text) {
 	$(".container").append('<div class="text-container"><p>' + text + '</p></div>');
+}
+
+function InsertSelect(id, options) {
+	var container = '<div class="select-container"><select>';
+	options.forEach((option) => {
+		container.concat('<option value="' + option + '">' + option + '</option>')
+	})
+	$('.container').append(container + '</select></div>')
 }
 
 

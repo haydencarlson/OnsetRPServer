@@ -60691,3 +60691,1007 @@ end)
 [2019-12-19 02:29:37] [script] All accounts have been saved !
 [2019-12-19 02:29:37] [script] All houses have been saved !
 [2019-12-19 02:29:37] [script] All vehicle have been saved !
+
+[2019-12-19 20:04:17] [info] Windows Server is starting
+[2019-12-19 20:04:17] [info] Detected 16 logical processors
+[2019-12-19 20:04:17] [info] Loaded 21 weapons from config
+[2019-12-19 20:04:17] [info] Loading plugin "mariadb"
+[2019-12-19 20:04:17] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 20:04:17] [info] Starting package "i18n"
+[2019-12-19 20:04:17] [info] Starting package "dialogui"
+[2019-12-19 20:04:17] [info] Starting package "onsetrp"
+[2019-12-19 20:04:18] [script] MariaDB: Connected to localhost
+[2019-12-19 20:04:18] [script] Door Count: 452
+[2019-12-19 20:04:18] [info] Starting package "trafficlights"
+[2019-12-19 20:04:18] [info] Starting package "createui"
+[2019-12-19 20:04:18] [info] Starting package "packagemanager"
+[2019-12-19 20:04:18] [info] Package load done, clients will download 65 files with a total of 2716 KB
+[2019-12-19 20:04:18] [info] Max players set to 100
+[2019-12-19 20:04:18] [info] VoIP systems activated at 24000hz
+[2019-12-19 20:04:18] [info] Listening on 127.0.0.1
+[2019-12-19 20:04:18] [info] Open port channels:
+[2019-12-19 20:04:18] [info] 	UDP 7777 (game)
+[2019-12-19 20:04:18] [info] 	UDP 7776 (query)
+[2019-12-19 20:04:18] [info] 	TCP 7775 (file)
+[2019-12-19 20:04:18] [info] Server loaded. Entering simulation...
+[2019-12-19 20:04:20] [info] Client requesting connection 127.0.0.1:51847
+[2019-12-19 20:04:20] [info] Player (ID 1) joining the game (127.0.0.1:51847)
+[2019-12-19 20:04:20] [script] Data created for : 1
+[2019-12-19 20:04:20] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:04:48] [script] All accounts have been saved !
+[2019-12-19 20:04:48] [script] All vehicle have been saved !
+[2019-12-19 20:04:48] [script] All houses have been saved !
+[2019-12-19 20:05:18] [script] All accounts have been saved !
+[2019-12-19 20:05:18] [script] All vehicle have been saved !
+[2019-12-19 20:05:18] [script] All houses have been saved !
+[2019-12-19 20:05:48] [script] All accounts have been saved !
+[2019-12-19 20:05:48] [script] All vehicle have been saved !
+[2019-12-19 20:05:48] [script] All houses have been saved !
+[2019-12-19 20:06:13] [info] MariaDB: Unloading plugin...
+[2019-12-19 20:06:13] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 20:06:17] [info] Windows Server is starting
+[2019-12-19 20:06:17] [info] Detected 16 logical processors
+[2019-12-19 20:06:17] [info] Loaded 21 weapons from config
+[2019-12-19 20:06:17] [info] Loading plugin "mariadb"
+[2019-12-19 20:06:17] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 20:06:17] [info] Starting package "i18n"
+[2019-12-19 20:06:17] [info] Starting package "dialogui"
+[2019-12-19 20:06:17] [info] Starting package "onsetrp"
+[2019-12-19 20:06:17] [script] MariaDB: Connected to localhost
+[2019-12-19 20:06:17] [script] Door Count: 452
+[2019-12-19 20:06:17] [info] Starting package "trafficlights"
+[2019-12-19 20:06:17] [info] Starting package "createui"
+[2019-12-19 20:06:17] [info] Starting package "packagemanager"
+[2019-12-19 20:06:17] [info] Package load done, clients will download 65 files with a total of 2716 KB
+[2019-12-19 20:06:17] [info] Max players set to 100
+[2019-12-19 20:06:17] [info] VoIP systems activated at 24000hz
+[2019-12-19 20:06:17] [info] Listening on 127.0.0.1
+[2019-12-19 20:06:17] [info] Open port channels:
+[2019-12-19 20:06:17] [info] 	UDP 7777 (game)
+[2019-12-19 20:06:17] [info] 	UDP 7776 (query)
+[2019-12-19 20:06:17] [info] 	TCP 7775 (file)
+[2019-12-19 20:06:17] [info] Server loaded. Entering simulation...
+[2019-12-19 20:06:20] [info] Client requesting connection 127.0.0.1:51847
+[2019-12-19 20:06:20] [info] Player (ID 1) joining the game (127.0.0.1:51847)
+[2019-12-19 20:06:20] [error] exported function call failed: function create is not exported in package dialogui
+[2019-12-19 20:06:20] [error] exported function call failed: function create is not exported in package dialogui
+[2019-12-19 20:06:20] [script] Data created for : 1
+[2019-12-19 20:06:20] [error] exported function call failed: function create is not exported in package dialogui
+[2019-12-19 20:06:20] [error] exported function call failed: function create is not exported in package dialogui
+[2019-12-19 20:06:20] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:06:47] [script] All accounts have been saved !
+[2019-12-19 20:06:47] [script] All vehicle have been saved !
+[2019-12-19 20:06:47] [script] All houses have been saved !
+[2019-12-19 20:07:17] [script] All accounts have been saved !
+[2019-12-19 20:07:17] [script] All vehicle have been saved !
+[2019-12-19 20:07:17] [script] All houses have been saved !
+[2019-12-19 20:07:27] [info] MariaDB: Unloading plugin...
+[2019-12-19 20:07:27] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 20:07:55] [info] Windows Server is starting
+[2019-12-19 20:07:55] [info] Detected 16 logical processors
+[2019-12-19 20:07:55] [info] Loaded 21 weapons from config
+[2019-12-19 20:07:55] [info] Loading plugin "mariadb"
+[2019-12-19 20:07:55] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 20:07:55] [info] Starting package "i18n"
+[2019-12-19 20:07:55] [info] Starting package "dialogui"
+[2019-12-19 20:07:55] [info] Starting package "onsetrp"
+[2019-12-19 20:07:55] [script] MariaDB: Connected to localhost
+[2019-12-19 20:07:55] [script] Door Count: 452
+[2019-12-19 20:07:55] [info] Starting package "trafficlights"
+[2019-12-19 20:07:55] [info] Starting package "createui"
+[2019-12-19 20:07:55] [info] Package load done, clients will download 66 files with a total of 2720 KB
+[2019-12-19 20:07:55] [info] Max players set to 100
+[2019-12-19 20:07:55] [info] VoIP systems activated at 24000hz
+[2019-12-19 20:07:55] [info] Listening on 127.0.0.1
+[2019-12-19 20:07:55] [info] Open port channels:
+[2019-12-19 20:07:55] [info] 	UDP 7777 (game)
+[2019-12-19 20:07:55] [info] 	UDP 7776 (query)
+[2019-12-19 20:07:55] [info] 	TCP 7775 (file)
+[2019-12-19 20:07:55] [info] Server loaded. Entering simulation...
+[2019-12-19 20:07:58] [info] Client requesting connection 127.0.0.1:51847
+[2019-12-19 20:07:58] [info] Player (ID 1) joining the game (127.0.0.1:51847)
+[2019-12-19 20:07:58] [script] Data created for : 1
+[2019-12-19 20:07:58] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:08:25] [script] All accounts have been saved !
+[2019-12-19 20:08:25] [script] All vehicle have been saved !
+[2019-12-19 20:08:25] [script] All houses have been saved !
+[2019-12-19 20:08:55] [script] All accounts have been saved !
+[2019-12-19 20:08:55] [script] All vehicle have been saved !
+[2019-12-19 20:08:55] [script] All houses have been saved !
+[2019-12-19 20:09:25] [script] All accounts have been saved !
+[2019-12-19 20:09:25] [script] All vehicle have been saved !
+[2019-12-19 20:09:25] [script] All houses have been saved !
+[2019-12-19 20:09:55] [script] All accounts have been saved !
+[2019-12-19 20:09:55] [script] All vehicle have been saved !
+[2019-12-19 20:09:55] [script] All houses have been saved !
+[2019-12-19 20:10:25] [script] All accounts have been saved !
+[2019-12-19 20:10:25] [script] All vehicle have been saved !
+[2019-12-19 20:10:25] [script] All houses have been saved !
+[2019-12-19 20:10:55] [script] All accounts have been saved !
+[2019-12-19 20:10:55] [script] All vehicle have been saved !
+[2019-12-19 20:10:55] [script] All houses have been saved !
+[2019-12-19 20:11:25] [script] All accounts have been saved !
+[2019-12-19 20:11:25] [script] All vehicle have been saved !
+[2019-12-19 20:11:25] [script] All houses have been saved !
+[2019-12-19 20:11:55] [script] All accounts have been saved !
+[2019-12-19 20:11:55] [script] All vehicle have been saved !
+[2019-12-19 20:11:55] [script] All houses have been saved !
+[2019-12-19 20:12:25] [script] All accounts have been saved !
+[2019-12-19 20:12:25] [script] All vehicle have been saved !
+[2019-12-19 20:12:25] [script] All houses have been saved !
+[2019-12-19 20:12:55] [script] All accounts have been saved !
+[2019-12-19 20:12:55] [script] All vehicle have been saved !
+[2019-12-19 20:12:55] [script] All houses have been saved !
+[2019-12-19 20:13:25] [script] All accounts have been saved !
+[2019-12-19 20:13:25] [script] All vehicle have been saved !
+[2019-12-19 20:13:25] [script] All houses have been saved !
+[2019-12-19 20:13:42] [script] Data created for 1
+[2019-12-19 20:13:55] [script] All accounts have been saved !
+[2019-12-19 20:13:55] [script] All vehicle have been saved !
+[2019-12-19 20:13:55] [script] All houses have been saved !
+[2019-12-19 20:14:25] [script] All accounts have been saved !
+[2019-12-19 20:14:25] [script] All vehicle have been saved !
+[2019-12-19 20:14:25] [script] All houses have been saved !
+[2019-12-19 20:14:40] [info] Player (ID 1) disconnected (127.0.0.1:51847)
+[2019-12-19 20:14:40] [script] Data destroyed for : 1
+[2019-12-19 20:14:55] [script] All accounts have been saved !
+[2019-12-19 20:14:55] [script] All vehicle have been saved !
+[2019-12-19 20:14:55] [script] All houses have been saved !
+[2019-12-19 20:15:25] [script] All accounts have been saved !
+[2019-12-19 20:15:25] [script] All vehicle have been saved !
+[2019-12-19 20:15:25] [script] All houses have been saved !
+[2019-12-19 20:15:55] [script] All accounts have been saved !
+[2019-12-19 20:15:55] [script] All vehicle have been saved !
+[2019-12-19 20:15:55] [script] All houses have been saved !
+[2019-12-19 20:16:25] [script] All accounts have been saved !
+[2019-12-19 20:16:25] [script] All vehicle have been saved !
+[2019-12-19 20:16:25] [script] All houses have been saved !
+[2019-12-19 20:16:55] [script] All accounts have been saved !
+[2019-12-19 20:16:55] [script] All vehicle have been saved !
+[2019-12-19 20:16:55] [script] All houses have been saved !
+[2019-12-19 20:17:25] [script] All accounts have been saved !
+[2019-12-19 20:17:25] [script] All vehicle have been saved !
+[2019-12-19 20:17:25] [script] All houses have been saved !
+[2019-12-19 20:17:55] [script] All accounts have been saved !
+[2019-12-19 20:17:55] [script] All vehicle have been saved !
+[2019-12-19 20:17:55] [script] All houses have been saved !
+[2019-12-19 20:18:25] [script] All accounts have been saved !
+[2019-12-19 20:18:25] [script] All vehicle have been saved !
+[2019-12-19 20:18:25] [script] All houses have been saved !
+[2019-12-19 20:18:55] [script] All accounts have been saved !
+[2019-12-19 20:18:55] [script] All vehicle have been saved !
+[2019-12-19 20:18:55] [script] All houses have been saved !
+[2019-12-19 20:19:25] [script] All accounts have been saved !
+[2019-12-19 20:19:25] [script] All vehicle have been saved !
+[2019-12-19 20:19:25] [script] All houses have been saved !
+[2019-12-19 20:19:55] [script] All accounts have been saved !
+[2019-12-19 20:19:55] [script] All vehicle have been saved !
+[2019-12-19 20:19:55] [script] All houses have been saved !
+[2019-12-19 20:20:25] [script] All accounts have been saved !
+[2019-12-19 20:20:25] [script] All vehicle have been saved !
+[2019-12-19 20:20:25] [script] All houses have been saved !
+[2019-12-19 20:20:55] [script] All accounts have been saved !
+[2019-12-19 20:20:55] [script] All vehicle have been saved !
+[2019-12-19 20:20:55] [script] All houses have been saved !
+[2019-12-19 20:21:25] [script] All accounts have been saved !
+[2019-12-19 20:21:25] [script] All vehicle have been saved !
+[2019-12-19 20:21:25] [script] All houses have been saved !
+[2019-12-19 20:21:55] [script] All accounts have been saved !
+[2019-12-19 20:21:55] [script] All vehicle have been saved !
+[2019-12-19 20:21:55] [script] All houses have been saved !
+[2019-12-19 20:22:25] [script] All accounts have been saved !
+[2019-12-19 20:22:25] [script] All vehicle have been saved !
+[2019-12-19 20:22:25] [script] All houses have been saved !
+[2019-12-19 20:22:55] [script] All vehicle have been cleaned up !
+[2019-12-19 20:22:55] [script] All accounts have been saved !
+[2019-12-19 20:22:55] [script] All vehicle have been saved !
+[2019-12-19 20:22:55] [script] All houses have been saved !
+[2019-12-19 20:23:25] [script] All accounts have been saved !
+[2019-12-19 20:23:25] [script] All vehicle have been saved !
+[2019-12-19 20:23:25] [script] All houses have been saved !
+[2019-12-19 20:23:55] [script] All accounts have been saved !
+[2019-12-19 20:23:55] [script] All vehicle have been saved !
+[2019-12-19 20:23:55] [script] All houses have been saved !
+[2019-12-19 20:24:25] [script] All accounts have been saved !
+[2019-12-19 20:24:25] [script] All vehicle have been saved !
+[2019-12-19 20:24:25] [script] All houses have been saved !
+[2019-12-19 20:24:55] [script] All accounts have been saved !
+[2019-12-19 20:24:55] [script] All vehicle have been saved !
+[2019-12-19 20:24:55] [script] All houses have been saved !
+[2019-12-19 20:25:25] [script] All accounts have been saved !
+[2019-12-19 20:25:25] [script] All vehicle have been saved !
+[2019-12-19 20:25:25] [script] All houses have been saved !
+[2019-12-19 20:25:55] [script] All accounts have been saved !
+[2019-12-19 20:25:55] [script] All vehicle have been saved !
+[2019-12-19 20:25:55] [script] All houses have been saved !
+[2019-12-19 20:26:25] [script] All accounts have been saved !
+[2019-12-19 20:26:25] [script] All vehicle have been saved !
+[2019-12-19 20:26:25] [script] All houses have been saved !
+[2019-12-19 20:26:55] [script] All accounts have been saved !
+[2019-12-19 20:26:55] [script] All vehicle have been saved !
+[2019-12-19 20:26:55] [script] All houses have been saved !
+[2019-12-19 20:27:25] [script] All accounts have been saved !
+[2019-12-19 20:27:25] [script] All vehicle have been saved !
+[2019-12-19 20:27:25] [script] All houses have been saved !
+[2019-12-19 20:27:55] [script] All accounts have been saved !
+[2019-12-19 20:27:55] [script] All vehicle have been saved !
+[2019-12-19 20:27:55] [script] All houses have been saved !
+[2019-12-19 20:28:25] [script] All accounts have been saved !
+[2019-12-19 20:28:25] [script] All vehicle have been saved !
+[2019-12-19 20:28:25] [script] All houses have been saved !
+[2019-12-19 20:28:55] [script] All accounts have been saved !
+[2019-12-19 20:28:55] [script] All vehicle have been saved !
+[2019-12-19 20:28:55] [script] All houses have been saved !
+[2019-12-19 20:29:25] [script] All accounts have been saved !
+[2019-12-19 20:29:25] [script] All vehicle have been saved !
+[2019-12-19 20:29:25] [script] All houses have been saved !
+[2019-12-19 20:29:55] [script] All accounts have been saved !
+[2019-12-19 20:29:55] [script] All vehicle have been saved !
+[2019-12-19 20:29:55] [script] All houses have been saved !
+[2019-12-19 20:30:25] [script] All accounts have been saved !
+[2019-12-19 20:30:25] [script] All vehicle have been saved !
+[2019-12-19 20:30:25] [script] All houses have been saved !
+[2019-12-19 20:30:55] [script] All accounts have been saved !
+[2019-12-19 20:30:55] [script] All vehicle have been saved !
+[2019-12-19 20:30:55] [script] All houses have been saved !
+[2019-12-19 20:31:25] [script] All accounts have been saved !
+[2019-12-19 20:31:25] [script] All vehicle have been saved !
+[2019-12-19 20:31:25] [script] All houses have been saved !
+[2019-12-19 20:31:55] [script] All accounts have been saved !
+[2019-12-19 20:31:55] [script] All vehicle have been saved !
+[2019-12-19 20:31:55] [script] All houses have been saved !
+[2019-12-19 20:32:25] [script] All accounts have been saved !
+[2019-12-19 20:32:25] [script] All vehicle have been saved !
+[2019-12-19 20:32:25] [script] All houses have been saved !
+[2019-12-19 20:32:55] [script] All accounts have been saved !
+[2019-12-19 20:32:55] [script] All vehicle have been saved !
+[2019-12-19 20:32:55] [script] All houses have been saved !
+[2019-12-19 20:33:25] [script] All accounts have been saved !
+[2019-12-19 20:33:25] [script] All vehicle have been saved !
+[2019-12-19 20:33:25] [script] All houses have been saved !
+[2019-12-19 20:33:55] [script] All accounts have been saved !
+[2019-12-19 20:33:55] [script] All vehicle have been saved !
+[2019-12-19 20:33:55] [script] All houses have been saved !
+[2019-12-19 20:34:25] [script] All accounts have been saved !
+[2019-12-19 20:34:25] [script] All vehicle have been saved !
+[2019-12-19 20:34:25] [script] All houses have been saved !
+[2019-12-19 20:34:55] [script] All accounts have been saved !
+[2019-12-19 20:34:55] [script] All vehicle have been saved !
+[2019-12-19 20:34:55] [script] All houses have been saved !
+[2019-12-19 20:35:25] [script] All accounts have been saved !
+[2019-12-19 20:35:25] [script] All vehicle have been saved !
+[2019-12-19 20:35:25] [script] All houses have been saved !
+[2019-12-19 20:35:55] [script] All accounts have been saved !
+[2019-12-19 20:35:55] [script] All vehicle have been saved !
+[2019-12-19 20:35:55] [script] All houses have been saved !
+[2019-12-19 20:36:25] [script] All accounts have been saved !
+[2019-12-19 20:36:25] [script] All vehicle have been saved !
+[2019-12-19 20:36:25] [script] All houses have been saved !
+[2019-12-19 20:36:55] [script] All accounts have been saved !
+[2019-12-19 20:36:55] [script] All vehicle have been saved !
+[2019-12-19 20:36:55] [script] All houses have been saved !
+[2019-12-19 20:37:00] [info] Client requesting connection 127.0.0.1:49297
+[2019-12-19 20:37:01] [info] Player (ID 1) joining the game (127.0.0.1:49297)
+[2019-12-19 20:37:01] [script] Data created for : 1
+[2019-12-19 20:37:01] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:37:25] [script] All accounts have been saved !
+[2019-12-19 20:37:25] [script] All vehicle have been saved !
+[2019-12-19 20:37:25] [script] All houses have been saved !
+[2019-12-19 20:37:55] [script] All vehicle have been cleaned up !
+[2019-12-19 20:37:55] [script] All accounts have been saved !
+[2019-12-19 20:37:55] [script] All vehicle have been saved !
+[2019-12-19 20:37:55] [script] All houses have been saved !
+[2019-12-19 20:37:55] [info] Player (ID 1) disconnected (127.0.0.1:49297)
+[2019-12-19 20:37:55] [script] Data destroyed for : 1
+[2019-12-19 20:38:25] [script] All accounts have been saved !
+[2019-12-19 20:38:25] [script] All vehicle have been saved !
+[2019-12-19 20:38:25] [script] All houses have been saved !
+[2019-12-19 20:38:29] [info] MariaDB: Unloading plugin...
+[2019-12-19 20:38:29] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 20:40:43] [info] Windows Server is starting
+[2019-12-19 20:40:43] [info] Detected 16 logical processors
+[2019-12-19 20:40:43] [info] Loaded 21 weapons from config
+[2019-12-19 20:40:43] [info] Loading plugin "mariadb"
+[2019-12-19 20:40:43] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 20:40:43] [info] Starting package "i18n"
+[2019-12-19 20:40:43] [info] Starting package "dialogui"
+[2019-12-19 20:40:43] [info] Starting package "onsetrp"
+[2019-12-19 20:40:44] [script] MariaDB: Connected to localhost
+[2019-12-19 20:40:44] [script] Door Count: 452
+[2019-12-19 20:40:44] [info] Starting package "trafficlights"
+[2019-12-19 20:40:44] [info] Starting package "createui"
+[2019-12-19 20:40:44] [info] Package load done, clients will download 66 files with a total of 2720 KB
+[2019-12-19 20:40:44] [info] Max players set to 100
+[2019-12-19 20:40:44] [info] VoIP systems activated at 24000hz
+[2019-12-19 20:40:44] [info] Listening on 127.0.0.1
+[2019-12-19 20:40:44] [info] Open port channels:
+[2019-12-19 20:40:44] [info] 	UDP 7777 (game)
+[2019-12-19 20:40:44] [info] 	UDP 7776 (query)
+[2019-12-19 20:40:44] [info] 	TCP 7775 (file)
+[2019-12-19 20:40:44] [info] Server loaded. Entering simulation...
+[2019-12-19 20:40:45] [info] Client requesting connection 127.0.0.1:63508
+[2019-12-19 20:40:46] [info] Player (ID 1) joining the game (127.0.0.1:63508)
+[2019-12-19 20:40:46] [script] Data created for : 1
+[2019-12-19 20:40:46] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:41:14] [script] All accounts have been saved !
+[2019-12-19 20:41:14] [script] All vehicle have been saved !
+[2019-12-19 20:41:14] [script] All houses have been saved !
+[2019-12-19 20:41:44] [script] All accounts have been saved !
+[2019-12-19 20:41:44] [script] All vehicle have been saved !
+[2019-12-19 20:41:44] [script] All houses have been saved !
+[2019-12-19 20:42:14] [script] All accounts have been saved !
+[2019-12-19 20:42:14] [script] All vehicle have been saved !
+[2019-12-19 20:42:14] [script] All houses have been saved !
+[2019-12-19 20:42:44] [script] All accounts have been saved !
+[2019-12-19 20:42:44] [script] All vehicle have been saved !
+[2019-12-19 20:42:44] [script] All houses have been saved !
+[2019-12-19 20:43:14] [script] All accounts have been saved !
+[2019-12-19 20:43:14] [script] All vehicle have been saved !
+[2019-12-19 20:43:14] [script] All houses have been saved !
+[2019-12-19 20:43:29] [script] Data created for 1
+[2019-12-19 20:43:44] [script] All accounts have been saved !
+[2019-12-19 20:43:44] [script] All vehicle have been saved !
+[2019-12-19 20:43:44] [script] All houses have been saved !
+[2019-12-19 20:44:14] [script] All accounts have been saved !
+[2019-12-19 20:44:14] [script] All vehicle have been saved !
+[2019-12-19 20:44:14] [script] All houses have been saved !
+[2019-12-19 20:44:44] [script] All accounts have been saved !
+[2019-12-19 20:44:44] [script] All vehicle have been saved !
+[2019-12-19 20:44:44] [script] All houses have been saved !
+[2019-12-19 20:45:02] [info] Player (ID 1) disconnected (127.0.0.1:63508)
+[2019-12-19 20:45:02] [script] Data destroyed for : 1
+[2019-12-19 20:45:04] [info] Client requesting connection 127.0.0.1:59615
+[2019-12-19 20:45:04] [info] Player (ID 1) joining the game (127.0.0.1:59615)
+[2019-12-19 20:45:04] [script] Data created for : 1
+[2019-12-19 20:45:04] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:45:14] [script] All accounts have been saved !
+[2019-12-19 20:45:14] [script] All vehicle have been saved !
+[2019-12-19 20:45:14] [script] All houses have been saved !
+[2019-12-19 20:45:44] [script] All accounts have been saved !
+[2019-12-19 20:45:44] [script] All vehicle have been saved !
+[2019-12-19 20:45:44] [script] All houses have been saved !
+[2019-12-19 20:46:14] [script] All accounts have been saved !
+[2019-12-19 20:46:14] [script] All vehicle have been saved !
+[2019-12-19 20:46:14] [script] All houses have been saved !
+[2019-12-19 20:46:44] [script] All accounts have been saved !
+[2019-12-19 20:46:44] [script] All vehicle have been saved !
+[2019-12-19 20:46:44] [script] All houses have been saved !
+[2019-12-19 20:47:07] [script] Data created for 2
+[2019-12-19 20:47:14] [script] All accounts have been saved !
+[2019-12-19 20:47:14] [script] All vehicle have been saved !
+[2019-12-19 20:47:14] [script] All houses have been saved !
+[2019-12-19 20:47:44] [script] All accounts have been saved !
+[2019-12-19 20:47:44] [script] All vehicle have been saved !
+[2019-12-19 20:47:44] [script] All houses have been saved !
+[2019-12-19 20:48:14] [script] All accounts have been saved !
+[2019-12-19 20:48:14] [script] All vehicle have been saved !
+[2019-12-19 20:48:14] [script] All houses have been saved !
+[2019-12-19 20:48:44] [script] All accounts have been saved !
+[2019-12-19 20:48:44] [script] All vehicle have been saved !
+[2019-12-19 20:48:44] [script] All houses have been saved !
+[2019-12-19 20:49:14] [script] All accounts have been saved !
+[2019-12-19 20:49:14] [script] All vehicle have been saved !
+[2019-12-19 20:49:14] [script] All houses have been saved !
+[2019-12-19 20:49:44] [script] All accounts have been saved !
+[2019-12-19 20:49:44] [script] All vehicle have been saved !
+[2019-12-19 20:49:44] [script] All houses have been saved !
+[2019-12-19 20:50:14] [script] All accounts have been saved !
+[2019-12-19 20:50:14] [script] All vehicle have been saved !
+[2019-12-19 20:50:14] [script] All houses have been saved !
+[2019-12-19 20:50:44] [script] All accounts have been saved !
+[2019-12-19 20:50:44] [script] All vehicle have been saved !
+[2019-12-19 20:50:44] [script] All houses have been saved !
+[2019-12-19 20:51:14] [script] All accounts have been saved !
+[2019-12-19 20:51:14] [script] All vehicle have been saved !
+[2019-12-19 20:51:14] [script] All houses have been saved !
+[2019-12-19 20:51:44] [script] All accounts have been saved !
+[2019-12-19 20:51:44] [script] All vehicle have been saved !
+[2019-12-19 20:51:44] [script] All houses have been saved !
+[2019-12-19 20:52:14] [script] All accounts have been saved !
+[2019-12-19 20:52:14] [script] All vehicle have been saved !
+[2019-12-19 20:52:14] [script] All houses have been saved !
+[2019-12-19 20:52:44] [script] All accounts have been saved !
+[2019-12-19 20:52:44] [script] All vehicle have been saved !
+[2019-12-19 20:52:44] [script] All houses have been saved !
+[2019-12-19 20:53:14] [script] All accounts have been saved !
+[2019-12-19 20:53:14] [script] All vehicle have been saved !
+[2019-12-19 20:53:14] [script] All houses have been saved !
+[2019-12-19 20:53:44] [script] All accounts have been saved !
+[2019-12-19 20:53:44] [script] All vehicle have been saved !
+[2019-12-19 20:53:44] [script] All houses have been saved !
+[2019-12-19 20:54:14] [script] All accounts have been saved !
+[2019-12-19 20:54:14] [script] All vehicle have been saved !
+[2019-12-19 20:54:14] [script] All houses have been saved !
+[2019-12-19 20:54:44] [script] All accounts have been saved !
+[2019-12-19 20:54:44] [script] All vehicle have been saved !
+[2019-12-19 20:54:44] [script] All houses have been saved !
+[2019-12-19 20:55:14] [script] All accounts have been saved !
+[2019-12-19 20:55:14] [script] All vehicle have been saved !
+[2019-12-19 20:55:14] [script] All houses have been saved !
+[2019-12-19 20:55:44] [script] All vehicle have been cleaned up !
+[2019-12-19 20:55:44] [script] All accounts have been saved !
+[2019-12-19 20:55:44] [script] All vehicle have been saved !
+[2019-12-19 20:55:44] [script] All houses have been saved !
+[2019-12-19 20:55:56] [info] Player (ID 1) disconnected (127.0.0.1:59615)
+[2019-12-19 20:55:56] [script] Data destroyed for : 1
+[2019-12-19 20:55:57] [info] Client requesting connection 127.0.0.1:53501
+[2019-12-19 20:55:57] [info] Player (ID 1) joining the game (127.0.0.1:53501)
+[2019-12-19 20:55:57] [script] Data created for : 1
+[2019-12-19 20:55:57] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:56:07] [info] Player (ID 1) disconnected (127.0.0.1:53501)
+[2019-12-19 20:56:07] [script] Data destroyed for : 1
+[2019-12-19 20:56:10] [info] Client requesting connection 127.0.0.1:53510
+[2019-12-19 20:56:10] [info] Player (ID 1) joining the game (127.0.0.1:53510)
+[2019-12-19 20:56:10] [script] Data created for : 1
+[2019-12-19 20:56:10] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:56:14] [script] All accounts have been saved !
+[2019-12-19 20:56:14] [script] All vehicle have been saved !
+[2019-12-19 20:56:14] [script] All houses have been saved !
+[2019-12-19 20:56:21] [script] 1	211168.171875, 175588.640625, 1307.1500244141
+[2019-12-19 20:56:44] [script] All accounts have been saved !
+[2019-12-19 20:56:44] [script] All vehicle have been saved !
+[2019-12-19 20:56:44] [script] All houses have been saved !
+[2019-12-19 20:57:14] [script] All accounts have been saved !
+[2019-12-19 20:57:14] [script] All vehicle have been saved !
+[2019-12-19 20:57:14] [script] All houses have been saved !
+[2019-12-19 20:57:22] [info] MariaDB: Unloading plugin...
+[2019-12-19 20:57:22] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 20:57:26] [info] Windows Server is starting
+[2019-12-19 20:57:26] [info] Detected 16 logical processors
+[2019-12-19 20:57:26] [info] Loaded 21 weapons from config
+[2019-12-19 20:57:26] [info] Loading plugin "mariadb"
+[2019-12-19 20:57:26] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 20:57:26] [info] Starting package "i18n"
+[2019-12-19 20:57:26] [info] Starting package "dialogui"
+[2019-12-19 20:57:26] [info] Starting package "onsetrp"
+[2019-12-19 20:57:26] [script] MariaDB: Connected to localhost
+[2019-12-19 20:57:26] [script] Door Count: 452
+[2019-12-19 20:57:26] [info] Starting package "trafficlights"
+[2019-12-19 20:57:26] [info] Starting package "createui"
+[2019-12-19 20:57:26] [info] Package load done, clients will download 66 files with a total of 2720 KB
+[2019-12-19 20:57:26] [info] Max players set to 100
+[2019-12-19 20:57:26] [info] VoIP systems activated at 24000hz
+[2019-12-19 20:57:26] [info] Listening on 127.0.0.1
+[2019-12-19 20:57:26] [info] Open port channels:
+[2019-12-19 20:57:26] [info] 	UDP 7777 (game)
+[2019-12-19 20:57:26] [info] 	UDP 7776 (query)
+[2019-12-19 20:57:26] [info] 	TCP 7775 (file)
+[2019-12-19 20:57:26] [info] Server loaded. Entering simulation...
+[2019-12-19 20:57:28] [info] Client requesting connection 127.0.0.1:53510
+[2019-12-19 20:57:29] [info] Player (ID 1) joining the game (127.0.0.1:53510)
+[2019-12-19 20:57:29] [script] Data created for : 1
+[2019-12-19 20:57:29] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:57:56] [script] All accounts have been saved !
+[2019-12-19 20:57:56] [script] All vehicle have been saved !
+[2019-12-19 20:57:56] [script] All houses have been saved !
+[2019-12-19 20:58:18] [info] Player (ID 1) disconnected (127.0.0.1:53510)
+[2019-12-19 20:58:18] [script] Data destroyed for : 1
+[2019-12-19 20:58:20] [info] MariaDB: Unloading plugin...
+[2019-12-19 20:58:20] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 20:58:23] [info] Windows Server is starting
+[2019-12-19 20:58:23] [info] Detected 16 logical processors
+[2019-12-19 20:58:23] [info] Loaded 21 weapons from config
+[2019-12-19 20:58:23] [info] Loading plugin "mariadb"
+[2019-12-19 20:58:23] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 20:58:23] [info] Starting package "i18n"
+[2019-12-19 20:58:23] [info] Starting package "dialogui"
+[2019-12-19 20:58:23] [info] Starting package "onsetrp"
+[2019-12-19 20:58:23] [script] MariaDB: Connected to localhost
+[2019-12-19 20:58:23] [script] Door Count: 452
+[2019-12-19 20:58:23] [info] Starting package "trafficlights"
+[2019-12-19 20:58:23] [info] Starting package "createui"
+[2019-12-19 20:58:23] [info] Package load done, clients will download 66 files with a total of 2720 KB
+[2019-12-19 20:58:23] [info] Max players set to 100
+[2019-12-19 20:58:23] [info] VoIP systems activated at 24000hz
+[2019-12-19 20:58:23] [info] Listening on 127.0.0.1
+[2019-12-19 20:58:23] [info] Open port channels:
+[2019-12-19 20:58:23] [info] 	UDP 7777 (game)
+[2019-12-19 20:58:23] [info] 	UDP 7776 (query)
+[2019-12-19 20:58:23] [info] 	TCP 7775 (file)
+[2019-12-19 20:58:23] [info] Server loaded. Entering simulation...
+[2019-12-19 20:58:25] [info] Client requesting connection 127.0.0.1:55593
+[2019-12-19 20:58:25] [info] Player (ID 1) joining the game (127.0.0.1:55593)
+[2019-12-19 20:58:25] [script] Data created for : 1
+[2019-12-19 20:58:25] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:58:53] [script] All accounts have been saved !
+[2019-12-19 20:58:53] [script] All vehicle have been saved !
+[2019-12-19 20:58:53] [script] All houses have been saved !
+[2019-12-19 20:59:21] [info] MariaDB: Unloading plugin...
+[2019-12-19 20:59:21] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 20:59:23] [info] Windows Server is starting
+[2019-12-19 20:59:23] [info] Detected 16 logical processors
+[2019-12-19 20:59:23] [info] Loaded 21 weapons from config
+[2019-12-19 20:59:23] [info] Loading plugin "mariadb"
+[2019-12-19 20:59:23] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 20:59:23] [info] Starting package "i18n"
+[2019-12-19 20:59:23] [info] Starting package "dialogui"
+[2019-12-19 20:59:23] [info] Starting package "onsetrp"
+[2019-12-19 20:59:23] [script] MariaDB: Connected to localhost
+[2019-12-19 20:59:23] [script] Door Count: 452
+[2019-12-19 20:59:23] [info] Starting package "trafficlights"
+[2019-12-19 20:59:23] [info] Starting package "createui"
+[2019-12-19 20:59:23] [info] Package load done, clients will download 65 files with a total of 2718 KB
+[2019-12-19 20:59:23] [info] Max players set to 100
+[2019-12-19 20:59:23] [info] VoIP systems activated at 24000hz
+[2019-12-19 20:59:23] [info] Listening on 127.0.0.1
+[2019-12-19 20:59:23] [info] Open port channels:
+[2019-12-19 20:59:23] [info] 	UDP 7777 (game)
+[2019-12-19 20:59:23] [info] 	UDP 7776 (query)
+[2019-12-19 20:59:23] [info] 	TCP 7775 (file)
+[2019-12-19 20:59:23] [info] Server loaded. Entering simulation...
+[2019-12-19 20:59:24] [info] Client requesting connection 127.0.0.1:55593
+[2019-12-19 20:59:24] [info] Player (ID 1) joining the game (127.0.0.1:55593)
+[2019-12-19 20:59:24] [script] Data created for : 1
+[2019-12-19 20:59:24] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 20:59:53] [script] All accounts have been saved !
+[2019-12-19 20:59:53] [script] All vehicle have been saved !
+[2019-12-19 20:59:53] [script] All houses have been saved !
+[2019-12-19 21:00:23] [script] All accounts have been saved !
+[2019-12-19 21:00:23] [script] All vehicle have been saved !
+[2019-12-19 21:00:23] [script] All houses have been saved !
+[2019-12-19 21:00:53] [script] All accounts have been saved !
+[2019-12-19 21:00:53] [script] All vehicle have been saved !
+[2019-12-19 21:00:53] [script] All houses have been saved !
+[2019-12-19 21:01:23] [script] All accounts have been saved !
+[2019-12-19 21:01:23] [script] All vehicle have been saved !
+[2019-12-19 21:01:23] [script] All houses have been saved !
+[2019-12-19 21:01:53] [script] All accounts have been saved !
+[2019-12-19 21:01:53] [script] All vehicle have been saved !
+[2019-12-19 21:01:53] [script] All houses have been saved !
+[2019-12-19 21:02:23] [script] All accounts have been saved !
+[2019-12-19 21:02:23] [script] All vehicle have been saved !
+[2019-12-19 21:02:23] [script] All houses have been saved !
+[2019-12-19 21:02:53] [script] All accounts have been saved !
+[2019-12-19 21:02:53] [script] All vehicle have been saved !
+[2019-12-19 21:02:53] [script] All houses have been saved !
+[2019-12-19 21:03:23] [script] All accounts have been saved !
+[2019-12-19 21:03:23] [script] All vehicle have been saved !
+[2019-12-19 21:03:23] [script] All houses have been saved !
+[2019-12-19 21:03:53] [script] All accounts have been saved !
+[2019-12-19 21:03:53] [script] All vehicle have been saved !
+[2019-12-19 21:03:53] [script] All houses have been saved !
+[2019-12-19 21:04:23] [script] All accounts have been saved !
+[2019-12-19 21:04:23] [script] All vehicle have been saved !
+[2019-12-19 21:04:23] [script] All houses have been saved !
+[2019-12-19 21:04:53] [script] All accounts have been saved !
+[2019-12-19 21:04:53] [script] All vehicle have been saved !
+[2019-12-19 21:04:53] [script] All houses have been saved !
+[2019-12-19 21:05:23] [script] All accounts have been saved !
+[2019-12-19 21:05:23] [script] All vehicle have been saved !
+[2019-12-19 21:05:23] [script] All houses have been saved !
+[2019-12-19 21:05:53] [script] All accounts have been saved !
+[2019-12-19 21:05:53] [script] All vehicle have been saved !
+[2019-12-19 21:05:53] [script] All houses have been saved !
+[2019-12-19 21:06:23] [script] All accounts have been saved !
+[2019-12-19 21:06:23] [script] All vehicle have been saved !
+[2019-12-19 21:06:23] [script] All houses have been saved !
+[2019-12-19 21:06:53] [script] All accounts have been saved !
+[2019-12-19 21:06:53] [script] All vehicle have been saved !
+[2019-12-19 21:06:53] [script] All houses have been saved !
+[2019-12-19 21:07:09] [info] Player (ID 1) disconnected (127.0.0.1:55593)
+[2019-12-19 21:07:09] [script] Data destroyed for : 1
+[2019-12-19 21:07:23] [script] All accounts have been saved !
+[2019-12-19 21:07:23] [script] All vehicle have been saved !
+[2019-12-19 21:07:23] [script] All houses have been saved !
+[2019-12-19 21:07:53] [script] All accounts have been saved !
+[2019-12-19 21:07:53] [script] All vehicle have been saved !
+[2019-12-19 21:07:53] [script] All houses have been saved !
+[2019-12-19 21:08:23] [script] All accounts have been saved !
+[2019-12-19 21:08:23] [script] All vehicle have been saved !
+[2019-12-19 21:08:23] [script] All houses have been saved !
+[2019-12-19 21:08:43] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:08:43] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:08:46] [info] Windows Server is starting
+[2019-12-19 21:08:46] [info] Detected 16 logical processors
+[2019-12-19 21:08:46] [info] Loaded 21 weapons from config
+[2019-12-19 21:08:46] [info] Loading plugin "mariadb"
+[2019-12-19 21:08:46] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:08:46] [info] Starting package "i18n"
+[2019-12-19 21:08:46] [info] Starting package "dialogui"
+[2019-12-19 21:08:46] [info] Starting package "onsetrp"
+[2019-12-19 21:08:46] [script] MariaDB: Connected to localhost
+[2019-12-19 21:08:46] [script] Door Count: 452
+[2019-12-19 21:08:46] [info] Starting package "trafficlights"
+[2019-12-19 21:08:46] [info] Starting package "createui"
+[2019-12-19 21:08:46] [info] Package load done, clients will download 65 files with a total of 2718 KB
+[2019-12-19 21:08:46] [info] Max players set to 100
+[2019-12-19 21:08:46] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:08:46] [info] Listening on 127.0.0.1
+[2019-12-19 21:08:46] [info] Open port channels:
+[2019-12-19 21:08:46] [info] 	UDP 7777 (game)
+[2019-12-19 21:08:46] [info] 	UDP 7776 (query)
+[2019-12-19 21:08:46] [info] 	TCP 7775 (file)
+[2019-12-19 21:08:46] [info] Server loaded. Entering simulation...
+[2019-12-19 21:08:47] [info] Client requesting connection 127.0.0.1:54146
+[2019-12-19 21:08:48] [info] Player (ID 1) joining the game (127.0.0.1:54146)
+[2019-12-19 21:08:48] [script] Data created for : 1
+[2019-12-19 21:08:48] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:09:16] [script] All accounts have been saved !
+[2019-12-19 21:09:16] [script] All vehicle have been saved !
+[2019-12-19 21:09:16] [script] All houses have been saved !
+[2019-12-19 21:09:46] [script] All accounts have been saved !
+[2019-12-19 21:09:46] [script] All vehicle have been saved !
+[2019-12-19 21:09:46] [script] All houses have been saved !
+[2019-12-19 21:10:16] [script] All accounts have been saved !
+[2019-12-19 21:10:16] [script] All vehicle have been saved !
+[2019-12-19 21:10:16] [script] All houses have been saved !
+[2019-12-19 21:10:46] [script] All accounts have been saved !
+[2019-12-19 21:10:46] [script] All vehicle have been saved !
+[2019-12-19 21:10:46] [script] All houses have been saved !
+[2019-12-19 21:10:49] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:10:49] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:10:52] [info] Windows Server is starting
+[2019-12-19 21:10:52] [info] Detected 16 logical processors
+[2019-12-19 21:10:52] [info] Loaded 21 weapons from config
+[2019-12-19 21:10:52] [info] Loading plugin "mariadb"
+[2019-12-19 21:10:52] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:10:52] [info] Starting package "i18n"
+[2019-12-19 21:10:52] [info] Starting package "sandbox"
+[2019-12-19 21:10:52] [script] Server: Attempting to load world.
+[2019-12-19 21:10:52] [script] Server: No world.json found in root server directory, one will be made next time the server saves.
+[2019-12-19 21:10:52] [script] Server: No schematics.json found in root server directory, one will be made next time a schematic is saved.
+[2019-12-19 21:10:52] [info] Starting package "onsetrp"
+[2019-12-19 21:10:53] [script] MariaDB: Connected to localhost
+[2019-12-19 21:10:53] [script] Door Count: 452
+[2019-12-19 21:10:53] [info] Starting package "trafficlights"
+[2019-12-19 21:10:53] [info] Starting package "createui"
+[2019-12-19 21:10:53] [info] Package load done, clients will download 153 files with a total of 3962 KB
+[2019-12-19 21:10:53] [info] Max players set to 100
+[2019-12-19 21:10:53] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:10:53] [info] Listening on 127.0.0.1
+[2019-12-19 21:10:53] [info] Open port channels:
+[2019-12-19 21:10:53] [info] 	UDP 7777 (game)
+[2019-12-19 21:10:53] [info] 	UDP 7776 (query)
+[2019-12-19 21:10:53] [info] 	TCP 7775 (file)
+[2019-12-19 21:10:53] [info] Server loaded. Entering simulation...
+[2019-12-19 21:10:58] [info] Client requesting connection 127.0.0.1:54146
+[2019-12-19 21:11:03] [info] Player (ID 1) joining the game (127.0.0.1:54146)
+[2019-12-19 21:11:03] [script] Data created for : 1
+[2019-12-19 21:11:03] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:11:23] [script] All accounts have been saved !
+[2019-12-19 21:11:23] [script] All vehicle have been saved !
+[2019-12-19 21:11:23] [script] All houses have been saved !
+[2019-12-19 21:11:53] [script] All accounts have been saved !
+[2019-12-19 21:11:53] [script] All vehicle have been saved !
+[2019-12-19 21:11:53] [script] All houses have been saved !
+[2019-12-19 21:12:23] [script] All accounts have been saved !
+[2019-12-19 21:12:23] [script] All vehicle have been saved !
+[2019-12-19 21:12:23] [script] All houses have been saved !
+[2019-12-19 21:12:53] [script] All accounts have been saved !
+[2019-12-19 21:12:53] [script] All vehicle have been saved !
+[2019-12-19 21:12:53] [script] All houses have been saved !
+[2019-12-19 21:13:23] [script] All accounts have been saved !
+[2019-12-19 21:13:23] [script] All vehicle have been saved !
+[2019-12-19 21:13:23] [script] All houses have been saved !
+[2019-12-19 21:13:53] [script] All accounts have been saved !
+[2019-12-19 21:13:53] [script] All vehicle have been saved !
+[2019-12-19 21:13:53] [script] All houses have been saved !
+[2019-12-19 21:14:23] [script] All accounts have been saved !
+[2019-12-19 21:14:23] [script] All vehicle have been saved !
+[2019-12-19 21:14:23] [script] All houses have been saved !
+[2019-12-19 21:14:53] [script] All accounts have been saved !
+[2019-12-19 21:14:53] [script] All vehicle have been saved !
+[2019-12-19 21:14:53] [script] All houses have been saved !
+[2019-12-19 21:15:23] [script] All accounts have been saved !
+[2019-12-19 21:15:23] [script] All vehicle have been saved !
+[2019-12-19 21:15:23] [script] All houses have been saved !
+[2019-12-19 21:15:53] [script] All accounts have been saved !
+[2019-12-19 21:15:53] [script] All vehicle have been saved !
+[2019-12-19 21:15:53] [script] All houses have been saved !
+[2019-12-19 21:16:00] [info] Player (ID 1) disconnected (127.0.0.1:54146)
+[2019-12-19 21:16:00] [script] Data destroyed for : 1
+[2019-12-19 21:16:06] [info] Client requesting connection 127.0.0.1:59680
+[2019-12-19 21:16:06] [info] Player (ID 1) joining the game (127.0.0.1:59680)
+[2019-12-19 21:16:06] [script] Data created for : 1
+[2019-12-19 21:16:06] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:16:23] [script] All accounts have been saved !
+[2019-12-19 21:16:23] [script] All vehicle have been saved !
+[2019-12-19 21:16:23] [script] All houses have been saved !
+[2019-12-19 21:16:53] [script] All accounts have been saved !
+[2019-12-19 21:16:53] [script] All vehicle have been saved !
+[2019-12-19 21:16:53] [script] All houses have been saved !
+[2019-12-19 21:17:03] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:17:03] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:17:06] [info] Windows Server is starting
+[2019-12-19 21:17:06] [info] Detected 16 logical processors
+[2019-12-19 21:17:07] [info] Loaded 21 weapons from config
+[2019-12-19 21:17:07] [info] Loading plugin "mariadb"
+[2019-12-19 21:17:07] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:17:07] [info] Starting package "i18n"
+[2019-12-19 21:17:07] [info] Starting package "sandbox"
+[2019-12-19 21:17:07] [script] Server: Attempting to load world.
+[2019-12-19 21:17:07] [script] Server: No world.json found in root server directory, one will be made next time the server saves.
+[2019-12-19 21:17:07] [script] Server: No schematics.json found in root server directory, one will be made next time a schematic is saved.
+[2019-12-19 21:17:07] [info] Starting package "onsetrp"
+[2019-12-19 21:17:07] [script] MariaDB: Connected to localhost
+[2019-12-19 21:17:07] [script] Door Count: 452
+[2019-12-19 21:17:07] [info] Starting package "trafficlights"
+[2019-12-19 21:17:07] [info] Starting package "createui"
+[2019-12-19 21:17:07] [info] Package load done, clients will download 153 files with a total of 3962 KB
+[2019-12-19 21:17:07] [info] Max players set to 100
+[2019-12-19 21:17:07] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:17:07] [info] Listening on 127.0.0.1
+[2019-12-19 21:17:07] [info] Open port channels:
+[2019-12-19 21:17:07] [info] 	UDP 7777 (game)
+[2019-12-19 21:17:07] [info] 	UDP 7776 (query)
+[2019-12-19 21:17:07] [info] 	TCP 7775 (file)
+[2019-12-19 21:17:07] [info] Server loaded. Entering simulation...
+[2019-12-19 21:17:11] [info] Client requesting connection 127.0.0.1:59680
+[2019-12-19 21:17:11] [info] Player (ID 1) joining the game (127.0.0.1:59680)
+[2019-12-19 21:17:11] [script] Data created for : 1
+[2019-12-19 21:17:11] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:17:37] [script] All accounts have been saved !
+[2019-12-19 21:17:37] [script] All vehicle have been saved !
+[2019-12-19 21:17:37] [script] All houses have been saved !
+[2019-12-19 21:18:07] [script] All accounts have been saved !
+[2019-12-19 21:18:07] [script] All vehicle have been saved !
+[2019-12-19 21:18:07] [script] All houses have been saved !
+[2019-12-19 21:18:18] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:18:18] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:18:24] [info] Windows Server is starting
+[2019-12-19 21:18:24] [info] Detected 16 logical processors
+[2019-12-19 21:18:24] [info] Loaded 21 weapons from config
+[2019-12-19 21:18:24] [info] Loading plugin "mariadb"
+[2019-12-19 21:18:24] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:18:24] [info] Starting package "i18n"
+[2019-12-19 21:18:24] [info] Starting package "sandbox"
+[2019-12-19 21:18:25] [script] Server: Attempting to load world.
+[2019-12-19 21:18:25] [script] Server: No world.json found in root server directory, one will be made next time the server saves.
+[2019-12-19 21:18:25] [script] Server: No schematics.json found in root server directory, one will be made next time a schematic is saved.
+[2019-12-19 21:18:25] [info] Starting package "onsetrp"
+[2019-12-19 21:18:25] [script] MariaDB: Connected to localhost
+[2019-12-19 21:18:25] [script] Door Count: 452
+[2019-12-19 21:18:25] [info] Starting package "trafficlights"
+[2019-12-19 21:18:25] [info] Starting package "createui"
+[2019-12-19 21:18:25] [info] Package load done, clients will download 153 files with a total of 3962 KB
+[2019-12-19 21:18:25] [info] Max players set to 100
+[2019-12-19 21:18:25] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:18:25] [info] Listening on 127.0.0.1
+[2019-12-19 21:18:25] [info] Open port channels:
+[2019-12-19 21:18:25] [info] 	UDP 7777 (game)
+[2019-12-19 21:18:25] [info] 	UDP 7776 (query)
+[2019-12-19 21:18:25] [info] 	TCP 7775 (file)
+[2019-12-19 21:18:25] [info] Server loaded. Entering simulation...
+[2019-12-19 21:18:26] [info] Client requesting connection 127.0.0.1:59680
+[2019-12-19 21:18:26] [info] Player (ID 1) joining the game (127.0.0.1:59680)
+[2019-12-19 21:18:26] [script] Data created for : 1
+[2019-12-19 21:18:26] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:18:55] [script] All accounts have been saved !
+[2019-12-19 21:18:55] [script] All vehicle have been saved !
+[2019-12-19 21:18:55] [script] All houses have been saved !
+[2019-12-19 21:19:25] [script] All accounts have been saved !
+[2019-12-19 21:19:25] [script] All vehicle have been saved !
+[2019-12-19 21:19:25] [script] All houses have been saved !
+[2019-12-19 21:19:55] [script] All accounts have been saved !
+[2019-12-19 21:19:55] [script] All vehicle have been saved !
+[2019-12-19 21:19:55] [script] All houses have been saved !
+[2019-12-19 21:20:25] [script] All accounts have been saved !
+[2019-12-19 21:20:25] [script] All vehicle have been saved !
+[2019-12-19 21:20:25] [script] All houses have been saved !
+[2019-12-19 21:20:53] [info] Player (ID 1) disconnected (127.0.0.1:59680)
+[2019-12-19 21:20:53] [script] Data destroyed for : 1
+[2019-12-19 21:20:55] [script] All accounts have been saved !
+[2019-12-19 21:20:55] [script] All vehicle have been saved !
+[2019-12-19 21:20:55] [script] All houses have been saved !
+[2019-12-19 21:21:25] [script] All accounts have been saved !
+[2019-12-19 21:21:25] [script] All vehicle have been saved !
+[2019-12-19 21:21:25] [script] All houses have been saved !
+[2019-12-19 21:21:55] [script] All accounts have been saved !
+[2019-12-19 21:21:55] [script] All vehicle have been saved !
+[2019-12-19 21:21:55] [script] All houses have been saved !
+[2019-12-19 21:22:01] [info] Client requesting connection 127.0.0.1:58744
+[2019-12-19 21:22:01] [info] Player (ID 1) joining the game (127.0.0.1:58744)
+[2019-12-19 21:22:02] [script] Data created for : 1
+[2019-12-19 21:22:02] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:22:23] [info] Player (ID 1) disconnected (127.0.0.1:58744)
+[2019-12-19 21:22:23] [script] Data destroyed for : 1
+[2019-12-19 21:22:25] [script] All accounts have been saved !
+[2019-12-19 21:22:25] [script] All vehicle have been saved !
+[2019-12-19 21:22:25] [script] All houses have been saved !
+[2019-12-19 21:22:55] [script] All accounts have been saved !
+[2019-12-19 21:22:55] [script] All vehicle have been saved !
+[2019-12-19 21:22:55] [script] All houses have been saved !
+[2019-12-19 21:23:25] [script] All accounts have been saved !
+[2019-12-19 21:23:25] [script] All vehicle have been saved !
+[2019-12-19 21:23:25] [script] All houses have been saved !
+[2019-12-19 21:23:55] [script] All accounts have been saved !
+[2019-12-19 21:23:55] [script] All vehicle have been saved !
+[2019-12-19 21:23:55] [script] All houses have been saved !
+[2019-12-19 21:24:25] [script] All accounts have been saved !
+[2019-12-19 21:24:25] [script] All vehicle have been saved !
+[2019-12-19 21:24:25] [script] All houses have been saved !
+[2019-12-19 21:24:27] [info] Client requesting connection 127.0.0.1:57945
+[2019-12-19 21:24:27] [info] Player (ID 1) joining the game (127.0.0.1:57945)
+[2019-12-19 21:24:27] [script] Data created for : 1
+[2019-12-19 21:24:27] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:24:35] [info] Player (ID 1) disconnected (127.0.0.1:57945)
+[2019-12-19 21:24:35] [script] Data destroyed for : 1
+[2019-12-19 21:24:55] [script] All accounts have been saved !
+[2019-12-19 21:24:55] [script] All vehicle have been saved !
+[2019-12-19 21:24:55] [script] All houses have been saved !
+[2019-12-19 21:25:25] [script] All accounts have been saved !
+[2019-12-19 21:25:25] [script] All vehicle have been saved !
+[2019-12-19 21:25:25] [script] All houses have been saved !
+[2019-12-19 21:25:47] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:25:47] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:25:50] [info] Windows Server is starting
+[2019-12-19 21:25:50] [info] Detected 16 logical processors
+[2019-12-19 21:25:50] [info] Loaded 21 weapons from config
+[2019-12-19 21:25:50] [info] Loading plugin "mariadb"
+[2019-12-19 21:25:50] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:25:50] [info] Starting package "i18n"
+[2019-12-19 21:25:50] [info] Starting package "sandboxnoeditor"
+[2019-12-19 21:25:50] [script] Server: Attempting to load world.
+[2019-12-19 21:25:50] [error] [string "sandboxnoeditor/server/save/save.lua"]:68: attempt to call a nil value (global 'Editor_CreateObject')
+[2019-12-19 21:25:50] [script] Server: No schematics.json found in root server directory, one will be made next time a schematic is saved.
+[2019-12-19 21:25:50] [info] Starting package "onsetrp"
+[2019-12-19 21:25:50] [script] MariaDB: Connected to localhost
+[2019-12-19 21:25:50] [script] Door Count: 452
+[2019-12-19 21:25:50] [info] Starting package "trafficlights"
+[2019-12-19 21:25:50] [info] Starting package "createui"
+[2019-12-19 21:25:50] [info] Package load done, clients will download 153 files with a total of 3962 KB
+[2019-12-19 21:25:50] [info] Max players set to 100
+[2019-12-19 21:25:50] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:25:50] [info] Listening on 127.0.0.1
+[2019-12-19 21:25:50] [info] Open port channels:
+[2019-12-19 21:25:50] [info] 	UDP 7777 (game)
+[2019-12-19 21:25:50] [info] 	UDP 7776 (query)
+[2019-12-19 21:25:50] [info] 	TCP 7775 (file)
+[2019-12-19 21:25:50] [info] Server loaded. Entering simulation...
+[2019-12-19 21:25:56] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:25:56] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:28:45] [info] Windows Server is starting
+[2019-12-19 21:28:45] [info] Detected 16 logical processors
+[2019-12-19 21:28:45] [info] Loaded 21 weapons from config
+[2019-12-19 21:28:45] [info] Loading plugin "mariadb"
+[2019-12-19 21:28:45] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:28:45] [info] Starting package "i18n"
+[2019-12-19 21:28:45] [info] Starting package "sandboxnoeditor"
+[2019-12-19 21:28:46] [script] Server: Attempting to load world.
+[2019-12-19 21:28:46] [script] Server: World loaded!
+[2019-12-19 21:28:46] [script] Server: No schematics.json found in root server directory, one will be made next time a schematic is saved.
+[2019-12-19 21:28:46] [info] Starting package "onsetrp"
+[2019-12-19 21:28:46] [script] MariaDB: Connected to localhost
+[2019-12-19 21:28:46] [script] Door Count: 452
+[2019-12-19 21:28:46] [info] Starting package "trafficlights"
+[2019-12-19 21:28:46] [info] Starting package "createui"
+[2019-12-19 21:28:46] [info] Package load done, clients will download 152 files with a total of 3936 KB
+[2019-12-19 21:28:46] [info] Max players set to 100
+[2019-12-19 21:28:46] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:28:46] [info] Listening on 127.0.0.1
+[2019-12-19 21:28:46] [info] Open port channels:
+[2019-12-19 21:28:46] [info] 	UDP 7777 (game)
+[2019-12-19 21:28:46] [info] 	UDP 7776 (query)
+[2019-12-19 21:28:46] [info] 	TCP 7775 (file)
+[2019-12-19 21:28:46] [info] Server loaded. Entering simulation...
+[2019-12-19 21:28:51] [info] Client requesting connection 127.0.0.1:64141
+[2019-12-19 21:28:56] [info] Player (ID 1) joining the game (127.0.0.1:64141)
+[2019-12-19 21:28:56] [script] Data created for : 1
+[2019-12-19 21:28:56] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:29:16] [script] All accounts have been saved !
+[2019-12-19 21:29:16] [script] All vehicle have been saved !
+[2019-12-19 21:29:16] [script] All houses have been saved !
+[2019-12-19 21:29:46] [script] All accounts have been saved !
+[2019-12-19 21:29:46] [script] All vehicle have been saved !
+[2019-12-19 21:29:46] [script] All houses have been saved !
+[2019-12-19 21:29:50] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:29:50] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:29:52] [info] Windows Server is starting
+[2019-12-19 21:29:52] [info] Detected 16 logical processors
+[2019-12-19 21:29:52] [info] Loaded 21 weapons from config
+[2019-12-19 21:29:52] [info] Loading plugin "mariadb"
+[2019-12-19 21:29:52] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:29:52] [info] Starting package "i18n"
+[2019-12-19 21:29:52] [info] Starting package "sandboxnoeditor"
+[2019-12-19 21:29:52] [script] Server: Attempting to load world.
+[2019-12-19 21:29:52] [script] Server: World loaded!
+[2019-12-19 21:29:52] [script] Server: No schematics.json found in root server directory, one will be made next time a schematic is saved.
+[2019-12-19 21:29:52] [info] Starting package "onsetrp"
+[2019-12-19 21:29:53] [script] MariaDB: Connected to localhost
+[2019-12-19 21:29:53] [script] Door Count: 452
+[2019-12-19 21:29:53] [info] Starting package "trafficlights"
+[2019-12-19 21:29:53] [info] Starting package "createui"
+[2019-12-19 21:29:53] [info] Package load done, clients will download 152 files with a total of 3936 KB
+[2019-12-19 21:29:53] [info] Max players set to 100
+[2019-12-19 21:29:53] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:29:53] [info] Listening on 127.0.0.1
+[2019-12-19 21:29:53] [info] Open port channels:
+[2019-12-19 21:29:53] [info] 	UDP 7777 (game)
+[2019-12-19 21:29:53] [info] 	UDP 7776 (query)
+[2019-12-19 21:29:53] [info] 	TCP 7775 (file)
+[2019-12-19 21:29:53] [info] Server loaded. Entering simulation...
+[2019-12-19 21:29:56] [info] Client requesting connection 127.0.0.1:64141
+[2019-12-19 21:29:56] [info] Player (ID 1) joining the game (127.0.0.1:64141)
+[2019-12-19 21:29:56] [script] Data created for : 1
+[2019-12-19 21:29:56] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:29:59] [script] 1
+[2019-12-19 21:30:23] [script] All accounts have been saved !
+[2019-12-19 21:30:23] [script] All vehicle have been saved !
+[2019-12-19 21:30:23] [script] All houses have been saved !
+[2019-12-19 21:30:28] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:30:28] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:30:54] [info] Windows Server is starting
+[2019-12-19 21:30:54] [info] Detected 16 logical processors
+[2019-12-19 21:30:54] [info] Loaded 21 weapons from config
+[2019-12-19 21:30:54] [info] Loading plugin "mariadb"
+[2019-12-19 21:30:54] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:30:54] [info] Starting package "i18n"
+[2019-12-19 21:30:54] [info] Starting package "sandboxnoeditor"
+[2019-12-19 21:30:55] [script] Server: Attempting to load world.
+[2019-12-19 21:30:55] [script] Server: World loaded!
+[2019-12-19 21:30:55] [script] Server: No schematics.json found in root server directory, one will be made next time a schematic is saved.
+[2019-12-19 21:30:55] [info] Starting package "onsetrp"
+[2019-12-19 21:30:55] [script] MariaDB: Connected to localhost
+[2019-12-19 21:30:55] [script] Door Count: 452
+[2019-12-19 21:30:55] [info] Starting package "trafficlights"
+[2019-12-19 21:30:55] [info] Starting package "createui"
+[2019-12-19 21:30:55] [info] Package load done, clients will download 152 files with a total of 3936 KB
+[2019-12-19 21:30:55] [info] Max players set to 100
+[2019-12-19 21:30:55] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:30:55] [info] Listening on 127.0.0.1
+[2019-12-19 21:30:55] [info] Open port channels:
+[2019-12-19 21:30:55] [info] 	UDP 7777 (game)
+[2019-12-19 21:30:55] [info] 	UDP 7776 (query)
+[2019-12-19 21:30:55] [info] 	TCP 7775 (file)
+[2019-12-19 21:30:55] [info] Server loaded. Entering simulation...
+[2019-12-19 21:30:55] [info] Client requesting connection 127.0.0.1:64141
+[2019-12-19 21:30:56] [info] Player (ID 1) joining the game (127.0.0.1:64141)
+[2019-12-19 21:30:56] [script] Data created for : 1
+[2019-12-19 21:30:56] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:30:59] [error] [string "sandboxnoeditor/server/save/save.lua"]:7: attempt to index a nil value (global 'PlayerData')
+[2019-12-19 21:31:15] [info] Player (ID 1) disconnected (127.0.0.1:64141)
+[2019-12-19 21:31:15] [script] Data destroyed for : 1
+[2019-12-19 21:31:25] [script] All accounts have been saved !
+[2019-12-19 21:31:25] [script] All vehicle have been saved !
+[2019-12-19 21:31:25] [script] All houses have been saved !
+[2019-12-19 21:31:54] [error] [string "sandboxnoeditor/server/save/save.lua"]:7: attempt to index a nil value (global 'PlayerData')
+[2019-12-19 21:31:55] [script] All accounts have been saved !
+[2019-12-19 21:31:55] [script] All vehicle have been saved !
+[2019-12-19 21:31:55] [script] All houses have been saved !
+[2019-12-19 21:32:19] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:32:19] [info] MariaDB: Plugin unloaded.
+
+[2019-12-19 21:32:20] [info] Windows Server is starting
+[2019-12-19 21:32:20] [info] Detected 16 logical processors
+[2019-12-19 21:32:21] [info] Loaded 21 weapons from config
+[2019-12-19 21:32:21] [info] Loading plugin "mariadb"
+[2019-12-19 21:32:21] [info] MariaDB: v1.1 successfully loaded.
+[2019-12-19 21:32:21] [info] Starting package "i18n"
+[2019-12-19 21:32:21] [info] Starting package "sandboxnoeditor"
+[2019-12-19 21:32:21] [script] Server: Attempting to load world.
+[2019-12-19 21:32:21] [script] Server: World loaded!
+[2019-12-19 21:32:21] [script] Server: No schematics.json found in root server directory, one will be made next time a schematic is saved.
+[2019-12-19 21:32:21] [info] Starting package "onsetrp"
+[2019-12-19 21:32:21] [script] MariaDB: Connected to localhost
+[2019-12-19 21:32:21] [script] Door Count: 452
+[2019-12-19 21:32:21] [info] Starting package "trafficlights"
+[2019-12-19 21:32:21] [info] Starting package "createui"
+[2019-12-19 21:32:21] [info] Package load done, clients will download 152 files with a total of 3936 KB
+[2019-12-19 21:32:21] [info] Max players set to 100
+[2019-12-19 21:32:21] [info] VoIP systems activated at 24000hz
+[2019-12-19 21:32:21] [info] Listening on 127.0.0.1
+[2019-12-19 21:32:21] [info] Open port channels:
+[2019-12-19 21:32:21] [info] 	UDP 7777 (game)
+[2019-12-19 21:32:21] [info] 	UDP 7776 (query)
+[2019-12-19 21:32:21] [info] 	TCP 7775 (file)
+[2019-12-19 21:32:21] [info] Server loaded. Entering simulation...
+[2019-12-19 21:32:24] [info] Client requesting connection 127.0.0.1:50999
+[2019-12-19 21:32:24] [info] Player (ID 1) joining the game (127.0.0.1:50999)
+[2019-12-19 21:32:24] [script] Data created for : 1
+[2019-12-19 21:32:24] [script] Account ID 1 loaded for 127.0.0.1
+[2019-12-19 21:32:31] [info] MariaDB: Unloading plugin...
+[2019-12-19 21:32:31] [info] MariaDB: Plugin unloaded.
