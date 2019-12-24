@@ -4,13 +4,18 @@ var updateText = function(text) {
     element.innerHTML = text;
 }
 
-var texttips = ['You can press F2 to', 'You can press F3 to', 'You can press F4 to', 'You can press F5 to'];
+var texttips = [
+    'You can press G to access your GPS', 
+    'You can press F1 near a door to purchase a house', 
+    'You can get a job near the spawn from the job manager', 
+    'Push K to pull out your phone and add contacts'
+];
 
-textSequence(0);
+document.getElementById("tips").innerHTML = texttips[0];
+textSequence(1);
 function textSequence(i) {
-
     if (texttips.length > i) {
-        setTimeout(function() {
+        setInterval(function() {
             document.getElementById("tips").innerHTML = texttips[i];
             textSequence(++i);
         }, 3000);
