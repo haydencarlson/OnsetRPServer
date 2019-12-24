@@ -1,0 +1,41 @@
+@import url(https://fonts.googleapis.com/css?family=Akronim);
+
+main {
+    color: #ffffff;
+    width: 50%;
+    height: 50;
+    text-align: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+body {
+    background-color: #000000; 
+    
+    font-family: 'Montserrat', sans-serif;  
+    animation: colorchange 10s infinite;
+    -webkit-animation: colorchange 10s infinite;
+}
+#logo {
+    width:500px;
+    height:150px;
+}
+@keyframes colorchange
+{
+  0%   {background: rgba(255, 0, 0, 1); background-image: url(images/diamonds.png);}
+  25%  {background: rgba(255, 255, 0, 1); background-image: url(images/diamonds.png);}
+  50%  {background: rgba(0, 0, 255, 1); background-image: url(images/diamonds.png);}
+  75%  {background: rgba(0, 250, 0, 1); background-image: url(images/diamonds.png);}
+  100% {background: rgba(255, 0, 0, 1); background-image: url(images/diamonds.png);}
+}
+
+@-webkit-keyframes colorchange
+{
+    0%   {background: rgba(255, 0, 0, 1); background-image: url(images/diamonds.png);}
+    25%  {background: rgba(255, 255, 0, 1); background-image: url(images/diamonds.png);}
+    50%  {background: rgba(0, 0, 255, 1); background-image: url(images/diamonds.png);}
+    75%  {background: rgba(0, 250, 0, 1); background-image: url(images/diamonds.png);}
+    100% {background: rgba(255, 0, 0, 1); background-image: url(images/diamonds.png);}
+}

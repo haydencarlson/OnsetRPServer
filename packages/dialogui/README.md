@@ -10,9 +10,7 @@ Dialog.addTextInput(test, 1, "First Name:")
 Dialog.addTextInput(test, 1, "Last Name:")
 Dialog.addSelect(test, 1, "Gender:", 1, "Male", "Female", "Apache Helicopter")
 
-AddEvent("OnDialogUIReady", function()
-  Dialog.show(test)
-end)
+Dialog.show(test)
 
 AddEvent("OnDialogSubmit", function(dialog, button, firstName, lastName, gender)
   if dialog ~= test then
@@ -29,3 +27,18 @@ AddEvent("OnDialogSubmit", function(dialog, button, firstName, lastName, gender)
 end)
 ```
 ![image](/screenshots/character-menu.png)
+
+## Themes
+There are multiple themes and you can create your own ones.
+- default-dark
+- saitama
+- flat
+
+To set the global theme:
+```lua
+Dialog.setGlobalTheme("flat")
+```
+To set a theme for just one dialog
+```lua
+Dialog.setDialogTheme(dialog, "flat")
+```
