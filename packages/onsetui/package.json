@@ -1,0 +1,17 @@
+{
+    "author": "onsetui",
+    "version": "0.0.1",
+    "server_scripts": [
+        "server.lua"
+    ],
+    "client_scripts": [
+        "client.lua"
+    ],
+    "files": [
+        "web/index.html",
+        "web/index.js",
+        "web/index.css",
+        "web/images/diamonds.png",
+        "web/images/logo.png"
+    ]	
+}
