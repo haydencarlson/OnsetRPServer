@@ -6,7 +6,6 @@ Addtional configuration on the server is necessary.
 ]]--
 
 AddEvent("OnPackageStart", function()
-
 	local Weapon = GetWeaponIdentifier():NewWeapon(1)
 	Weapon:SetWeaponType(0)
 	Weapon:SetWeaponSubType(0)
