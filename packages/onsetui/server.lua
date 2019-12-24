@@ -1,5 +1,0 @@
-AddEvent("OnPlayerJoin", function(player)
-    print('called')
-    print(player)
-    CallRemoteEvent(player, "showloading")
-end)
