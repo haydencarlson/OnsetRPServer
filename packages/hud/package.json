@@ -1,0 +1,24 @@
+{
+    "author": "nil",
+    "version": "0.0.1",
+    "server_scripts": [
+            "server.lua"
+    ],
+    "client_scripts": [
+            "client.lua"
+    ],
+    "files": [
+            "web/index.html",
+            "web/index.js",
+            "web/index.css",
+            "web/images/player.png",
+            "web/images/hp.png",
+            "web/images/armour.png",
+            "web/images/hunger.png",
+            "web/images/thirst.png",
+            "web/images/job.png",
+            "web/images/cash.png",
+            "web/images/bank.png",
+            "web/images/balance.png"
+    ]	
+}

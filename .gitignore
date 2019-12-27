@@ -3,3 +3,8 @@ mariadb_log.txt
 *.vdf
 *.txt
 server_config.json
+OnsetServer
+OnsetServer.exe
+libsteam_api.so
+start_linux.sh
+steamclient.so
