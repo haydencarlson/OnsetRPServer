@@ -3,6 +3,11 @@ var updateText = function(text) {
     var element = document.getElementById("header");
     element.innerHTML = text;
 }
+var updateName = function(text) {
+    var element = document.getElementById("playername");
+    element.innerHTML = text;
+}
+
 
 var texttips = [
     'You can press G to access your GPS', 
