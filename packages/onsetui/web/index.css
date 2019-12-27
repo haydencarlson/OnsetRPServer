@@ -3,20 +3,27 @@
 main {
     color: #ffffff;
     width: 50%;
-    height: 50;
+    height: 100%;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 85%;
     left: 50%;
     transform: translate(-50%, -50%);
 
 }
 body {
-    background-color: #000000; 
-    
+    background-color: rgba(0, 0, 0, 0.5); 
     font-family: 'Montserrat', sans-serif;  
-    animation: colorchange 10s infinite;
-    -webkit-animation: colorchange 10s infinite;
+    animation: colorchange 20s infinite;
+    -webkit-animation: colorchange 20s infinite;
+}
+#tips {
+ position: absolute;
+  	top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
 }
 #logo {
     width:500px;
@@ -24,18 +31,18 @@ body {
 }
 @keyframes colorchange
 {
-  0%   {background: rgba(255, 0, 0, 1); background-image: url(images/diamonds.png);}
-  25%  {background: rgba(255, 255, 0, 1); background-image: url(images/diamonds.png);}
-  50%  {background: rgba(0, 0, 255, 1); background-image: url(images/diamonds.png);}
-  75%  {background: rgba(0, 250, 0, 1); background-image: url(images/diamonds.png);}
-  100% {background: rgba(255, 0, 0, 1); background-image: url(images/diamonds.png);}
+  0%   {background: rgb(255, 0, 0); background-image: url(images/diamonds.png);}
+  25%  {background: rgb(255, 255, 0); background-image: url(images/diamonds.png);}
+  50%  {background: rgb(0, 0, 255); background-image: url(images/diamonds.png);}
+  75%  {background: rgb(0, 250, 0); background-image: url(images/diamonds.png);}
+  100% {background: rgb(255, 0, 0); background-image: url(images/diamonds.png);}
 }
 
 @-webkit-keyframes colorchange
 {
-    0%   {background: rgba(255, 0, 0, 1); background-image: url(images/diamonds.png);}
-    25%  {background: rgba(255, 255, 0, 1); background-image: url(images/diamonds.png);}
-    50%  {background: rgba(0, 0, 255, 1); background-image: url(images/diamonds.png);}
-    75%  {background: rgba(0, 250, 0, 1); background-image: url(images/diamonds.png);}
-    100% {background: rgba(255, 0, 0, 1); background-image: url(images/diamonds.png);}
+  0%   {background: rgb(255, 0, 0); background-image: url(images/diamonds.png);}
+  25%  {background: rgb(255, 255, 0); background-image: url(images/diamonds.png);}
+  50%  {background: rgb(0, 0, 255); background-image: url(images/diamonds.png);}
+  75%  {background: rgb(0, 250, 0); background-image: url(images/diamonds.png);}
+  100% {background: rgb(255, 0, 0); background-image: url(images/diamonds.png);}
 }
