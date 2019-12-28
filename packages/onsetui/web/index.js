@@ -19,14 +19,13 @@ var texttips = [
 document.getElementById("tips").innerHTML = texttips[0];
 textSequence(1);
 function textSequence(i) {
-    if (texttips.length > i) {
-        setInterval(function() {
+    if (i < texttips.length) {
+        setTimeout(function() {
             document.getElementById("tips").innerHTML = texttips[i];
-            textSequence(++i);
+            return textSequence(++i);
         }, 3000);
 
     } else if (texttips.length == i) {
-        textSequence(0);
+        return textSequence(0);
     }
-
 }

@@ -27,8 +27,3 @@ local function showgui()
 	SetWebVisibility(gui, WEB_HITINVISIBLE)
 end
 AddRemoteEvent("hud:show", showgui)
-function OnScriptError(message)
-        AddPlayerChat(message)
-	print('<span color="#ff0000bb" style="bold" size="10">'..message..'</>')
-end
-AddEvent("OnScriptError", OnScriptError)
