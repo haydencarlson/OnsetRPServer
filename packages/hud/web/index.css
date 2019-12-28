@@ -97,8 +97,8 @@ border: 1px solid #5f0202;
 @media screen and (min-width:1281px) and (max-width: 4000px)  {
 
     .hud {
-        width:90%;
-        right:5%;
+        width:70%;
+        right:10%;
         
     }
     #balanceimg {
