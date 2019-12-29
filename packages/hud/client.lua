@@ -22,7 +22,7 @@ AddRemoteEvent('hud:update', function(playername, hunger, thirst, cash, bank, jo
 	ExecuteWebJS(gui, "updateName('" .. playername .. "');")
 	ExecuteWebJS(gui, "updateHunger(" .. hunger .. ");")
 	ExecuteWebJS(gui, "updateThirst(" .. thirst .. ");")
-	ExecuteWebJS(gui, "updateJob('" .. job .. "');")
+	ExecuteWebJS(gui, "updateJob('Citizen');")
 	ExecuteWebJS(gui, "updateCash(" .. cash .. ");")
 	ExecuteWebJS(gui, "updateBank(" .. bank .. ");")
 end)
