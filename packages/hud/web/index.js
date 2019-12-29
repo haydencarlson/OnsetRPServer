@@ -2,16 +2,9 @@ var updateName = function(text) {
     var element = document.getElementById("playername");
     element.innerHTML = text;
 }
-var updateHealth = function(text) {
-    var element = document.getElementById("health");
-    element.innerHTML = text;
-}
+
 var updateHunger = function(text) {
     var element = document.getElementById("hunger");
-    element.innerHTML = text;
-}
-var updateArmor = function(text) {
-    var element = document.getElementById("armor");
     element.innerHTML = text;
 }
 
