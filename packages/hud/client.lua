@@ -5,7 +5,7 @@ local gui = nil
 local function OnPackageStart() 
     gui = CreateWebUI(0.0, 0.0, 0.0, 0.0, 5, 16)
     LoadWebFile(gui, "http://asset/" .. GetPackageName() .. "/web/index.html")
-    SetWebSize(gui, 1600, 1218)
+    SetWebSize(gui, 1218, 1218)
     SetWebAlignment(gui, 0.5, 0.5)
     SetWebAnchors(gui, 0.5, 0.5, 0.5, 0.5)
 	SetWebVisibility(gui, WEB_HITINVISIBLE)
