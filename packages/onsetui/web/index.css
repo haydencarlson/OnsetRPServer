@@ -25,6 +25,14 @@ body {
 
 
 }
+
+#tips {
+  position: absolute;
+     top: 30%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+ }
+
 #logo {
     width:500px;
     height:150px;
