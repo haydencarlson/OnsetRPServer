@@ -1,0 +1,125 @@
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  margin-top:200px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  -webkit-user-select: none; /* Safari 3.1+ */
+  -moz-user-select: none; /* Firefox 2+ */
+  -ms-user-select: none; /* IE 10+ */
+  user-select: none; /* Standard syntax */
+}
+main {
+  position:relative;
+  height: 500px;
+  width: 500px;
+  background: rgba(25,25,25,0.9);
+  text-align: left;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.45), 0 4px 8px rgba(0, 0, 0, 0.35), 0 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+#info-ui-header {
+  background-color: #3f72af;
+  height:50px;
+  width:500px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  margin-bottom:20px;
+}
+.info-ui-panel {
+  display:flex;
+  flex-flow:column;
+  width:100%;
+  height:370px;
+  border-top: 2px solid #3f72af;
+}
+.info-ui-panel-header {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  background-color: #3f72af;
+  text-align: center;
+  width:100%;
+  height:30px;
+}
+
+.info-ui-panel-content {
+  display:flex;
+  flex-flow:column;
+  flex-grow:1;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+}
+
+.info-ui-panel-item {
+  width: 60%;
+  padding-bottom: 15px;
+}
+
+#info-ui-panels-container {
+  overflow-y:scroll;
+  height: 430px;
+}
+
+h3 {
+  text-align: center;
+  margin-top:15px;
+  letter-spacing: 2px;
+  color:white;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(25,25,25,0.9); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+#info-ui-close {
+  position: absolute;
+  right: 20px;
+  top: 13px;
+  width: 24px;
+  height: 24px;
+  opacity: 0.5;
+}
+#info-ui-close:hover {
+  opacity: 1;
+  cursor:pointer;
+}
+#info-ui-close:before, #info-ui-close:after {
+  position: absolute;
+  left: 15px;
+  content: ' ';
+  height: 24px;
+  width: 2px;
+  background-color: #333;
+}
+#info-ui-close:before {
+  transform: rotate(45deg);
+}
+#info-ui-close:after {
+  transform: rotate(-45deg);
+}

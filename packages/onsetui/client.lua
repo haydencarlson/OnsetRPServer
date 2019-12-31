@@ -6,7 +6,7 @@ local function OnPackageStart()
     SetWebSize(gui, 4000, 2000)
     SetWebAlignment(gui, 0.5, 0.5)
     SetWebAnchors(gui, 0.5, 0.5, 0.5, 0.5)
-    SetWebVisibility(gui, WEB_VISIBLE)
+    SetWebVisibility(gui, WEB_HIDDEN)
 end
 AddEvent("OnPackageStart", OnPackageStart)
 
