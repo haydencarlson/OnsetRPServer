@@ -12,17 +12,18 @@ AddEvent("OnPackageStart", OnPackageStart)
 
 AddEvent("OnKeyPress", function(key)
     SetWebVisibility(gui, WEB_HIDDEN)
+    CallRemoteEvent('hud:server:show')
 end)
+
+AddEvent("OnWebLoadComplete", function(web)
+    if web == gui then
+        CallRemoteEvent("GetStartScreenData")
+    end
+end)
+
 local function showgui(message, playername)
-Delay(1000, function() 
-ExecuteWebJS(gui, "updateText('" .. message .. "');")
-ExecuteWebJS(gui, "updateName('" .. playername .. "');")
+    ExecuteWebJS(gui, "updateText('" .. message .. "');")
+    ExecuteWebJS(gui, "updateName('" .. playername .. "');")
     SetWebVisibility(gui, WEB_HITINVISIBLE)
-end)
 end
 AddRemoteEvent("motd:show", showgui)	
-
-function OnScriptError(message)
-	AddPlayerChat('<span color="#ff0000bb" style="bold" size="10">'..message..'</>')
-end
-AddEvent("OnScriptError", OnScriptError)

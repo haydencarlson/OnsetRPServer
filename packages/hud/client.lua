@@ -8,7 +8,7 @@ local function OnPackageStart()
     SetWebSize(gui, 1218, 1218)
     SetWebAlignment(gui, 0.5, 0.5)
     SetWebAnchors(gui, 0.5, 0.5, 0.5, 0.5)
-	SetWebVisibility(gui, WEB_HITINVISIBLE)
+	SetWebVisibility(gui, WEB_HIDDEN)
 
 end
 AddEvent("OnPackageStart", OnPackageStart)
@@ -22,7 +22,7 @@ AddRemoteEvent('hud:update', function(playername, hunger, thirst, cash, bank, jo
 	ExecuteWebJS(gui, "updateName('" .. playername .. "');")
 	ExecuteWebJS(gui, "updateHunger(" .. hunger .. ");")
 	ExecuteWebJS(gui, "updateThirst(" .. thirst .. ");")
-	ExecuteWebJS(gui, "updateJob('" .. job .. "');")
+	ExecuteWebJS(gui, "updateJob('Citizen');")
 	ExecuteWebJS(gui, "updateCash(" .. cash .. ");")
 	ExecuteWebJS(gui, "updateBank(" .. bank .. ");")
 end)
@@ -33,7 +33,6 @@ AddRemoteEvent("RPNotify:HUDEvent", function(property, value)
 		ExecuteWebJS(gui, functionName .. "('" .. value .. "');")
 	end
 end)
-
 
 local function showgui()   
 	SetWebVisibility(gui, WEB_HITINVISIBLE)
