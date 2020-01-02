@@ -11,8 +11,8 @@ end
 AddEvent("OnPackageStart", OnPackageStart)
 
 AddEvent("OnKeyPress", function(key)
-    SetWebVisibility(gui, WEB_HIDDEN)
     CallRemoteEvent('hud:server:show')
+    SetWebVisibility(gui, WEB_HIDDEN)
 end)
 
 AddEvent("OnWebLoadComplete", function(web)
