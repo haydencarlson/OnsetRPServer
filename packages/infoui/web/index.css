@@ -35,7 +35,7 @@ main {
   display:flex;
   flex-flow:column;
   width:100%;
-  height:390px;
+  height:420px;
   border-top: 2px solid #3f72af;
 }
 .info-ui-panel-header {
