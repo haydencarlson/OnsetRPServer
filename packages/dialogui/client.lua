@@ -2,6 +2,7 @@ local web = CreateWebUI(0, 0, 0, 0, 1, 16)
 SetWebAlignment(web, 0, 0)
 SetWebAnchors(web, 0, 0, 1, 1)
 SetWebURL(web, "http://asset/"..GetPackageName().."/dialog.html")
+SetWebVisibility(web, WEB_HITINVISIBLE)
 local nextId = 1
 local dialogs = {}
 local lastOpened = -1
@@ -156,6 +157,7 @@ function closeDialog()
     SetIgnoreMoveInput(false)
     ShowMouseCursor(false)
     SetInputMode(INPUT_GAME)
+    SetWebVisibility(web, WEB_HITINVISIBLE)
 end
 function destroyDialog(dialog)
     if lastOpened == dialog then
@@ -221,6 +223,7 @@ function showDialog(dialog)
     for i=1,#d.buttons do
         table.insert(json.buttons, replaceVariables(d.buttons[i], d.variables))
     end
+    SetWebVisibility(web, WEB_VISIBLE)
     ExecuteWebJS(web, "SetDialog("..dialog..","..json_encode(json)..");")
     SetIgnoreLookInput(true)
     SetIgnoreMoveInput(true)
@@ -254,6 +257,7 @@ AddEvent("__dialog_system_closed", function()
     SetIgnoreMoveInput(false)
     ShowMouseCursor(false)
     SetInputMode(INPUT_GAME)
+    SetWebVisibility(web, WEB_HITINVISIBLE)
 end)
 
 AddEvent("OnHideMainMenu", function()
