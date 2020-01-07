@@ -1,4 +1,5 @@
 local infoui = nil
+isPlayerCreated = true
 
 local function OnPackageStart() 
     infoui = CreateWebUI(0.0, 0.0, 0.0, 0.0, 5, 16)
@@ -14,8 +15,16 @@ AddRemoteEvent("InfoUI:Show", function()
     SetInputMode(INPUT_UI)
 end)
 
+AddRemoteEvent("InfoUI:PlayerCreated", function(isCreated) 
+    isPlayerCreated = isCreated
+end)
+
+
 AddEvent("InfoUI:Close", function() 
     SetWebVisibility(infoui, WEB_HIDDEN)
     SetInputMode(INPUT_GAME)
+    if isPlayerCreated == false then
+        CallRemoteEvent("ServerCharacterCreation")
+    end
 end)
 AddEvent("OnPackageStart", OnPackageStart)

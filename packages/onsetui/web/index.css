@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Akronim);
-* {
-  background-color: rgba(0, 0, 0, 0); 
+html {
+  height: 0px;
+  width: 0px;
 }
 main {
     color: #ffffff;
