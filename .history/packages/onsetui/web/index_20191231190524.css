@@ -1,0 +1,119 @@
+@import url(https://fonts.googleapis.com/css?family=Akronim);
+
+main {
+    color: #ffffff;
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+body {
+    background-color: rgba(0, 0, 0, 0.5); 
+    font-family: 'Montserrat', sans-serif;  
+    animation: colorchange 20s infinite;
+    -webkit-animation: colorchange 20s infinite;
+}
+#tips {
+ position: absolute;
+  	top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+}
+
+@keyframes colorchange
+{
+  0%   {background: rgb(255, 0, 0); background-image: url(images/diamonds.png);}
+  25%  {background: rgb(255, 255, 0); background-image: url(images/diamonds.png);}
+  50%  {background: rgb(0, 0, 255); background-image: url(images/diamonds.png);}
+  75%  {background: rgb(0, 250, 0); background-image: url(images/diamonds.png);}
+  100% {background: rgb(255, 0, 0); background-image: url(images/diamonds.png);}
+}
+
+@-webkit-keyframes colorchange
+{
+  0%   {background: rgb(255, 0, 0); background-image: url(images/diamonds.png);}
+  25%  {background: rgb(255, 255, 0); background-image: url(images/diamonds.png);}
+  50%  {background: rgb(0, 0, 255); background-image: url(images/diamonds.png);}
+  75%  {background: rgb(0, 250, 0); background-image: url(images/diamonds.png);}
+  100% {background: rgb(255, 0, 0); background-image: url(images/diamonds.png);}
+}
+#logo {
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  transform: translate(-50%, -50%);
+  animation: fill 2.5s ease 3.5s;
+  animation-fill-mode: forwards;
+  cursor: default;
+}
+#logo path:nth-child(1){
+  stroke-dasharray:377.4080505371094;
+  stroke-dashoffset:377.4080505371094;
+  animation: anim 2s ease forwards 0.2s;
+}
+#logo path:nth-child(2){
+  stroke-dasharray:312.57623291015625;
+  stroke-dashoffset:312.57623291015625;
+  animation: anim 2s ease forwards 0.4s;
+}
+#logo path:nth-child(3){
+  stroke-dasharray:168.9600067138672;
+  stroke-dashoffset:168.9600067138672;
+  animation: anim 2s ease forwards 0.7s;
+}
+#logo path:nth-child(4){
+  stroke-dasharray:312.57781982421875;
+  stroke-dashoffset:312.57781982421875;
+  animation: anim 2s ease forwards 1.0s;
+}
+#logo path:nth-child(5){
+  stroke-dasharray:283.78375244140625;
+  stroke-dashoffset:283.78375244140625;
+  animation: anim 2s ease forwards 1.1s;
+}
+#logo path:nth-child(6){
+  stroke-dasharray:256.2912292480469;
+  stroke-dashoffset:256.2912292480469;
+  animation: anim 2s ease forwards 1.3s;
+}
+#logo path:nth-child(7){
+  stroke-dasharray:315.21917724609375;
+  stroke-dashoffset:315.21917724609375;
+  animation: anim 2s ease forwards 1.5s;
+}
+#logo path:nth-child(8){
+  stroke-dasharray:353.1136169433594;
+  stroke-dashoffset:353.1136169433594;
+  animation: anim 2s ease forwards 1.7s;
+}
+#logo path:nth-child(9){
+  stroke-dasharray:288.1854553222656;
+  stroke-dashoffset:288.1854553222656;
+  animation: anim 2s ease forwards 2.0s;
+}
+
+@keyframes anim {
+  from{
+      top:45%;
+  }  
+  to {
+      stroke-dashoffset: 0;
+      top: 30%;
+    }
+  }
+  
+  @keyframes fill {
+      from {
+          fill: transparent;
+    }
+  
+      to {
+          fill:#8BA1D1;
+      }
+  }
