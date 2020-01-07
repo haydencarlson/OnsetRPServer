@@ -228,7 +228,7 @@ function showDialog(dialog)
     SetIgnoreLookInput(true)
     SetIgnoreMoveInput(true)
     ShowMouseCursor(true)
-    SetInputMode(INPUT_GAMEANDUI)
+    SetInputMode(INPUT_UI)
 end
 function applyTheme(theme)
     ExecuteWebJS(web, "SetTheme(\""..theme.."\");")

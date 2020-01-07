@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Akronim);
-
+* {
+  background-color: rgba(0, 0, 0, 0); 
+}
 main {
     color: #ffffff;
     width: 50%;
@@ -12,7 +14,7 @@ main {
 
 }
 body {
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0); 
     font-family: 'Montserrat', sans-serif;  
     animation: colorchange 20s infinite;
     -webkit-animation: colorchange 20s infinite;

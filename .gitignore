@@ -9,3 +9,4 @@ libsteam_api.so
 start_linux.sh
 steamapps/app*
 steamclient.so
+config/*
