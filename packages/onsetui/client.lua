@@ -9,14 +9,16 @@ local function OnPackageStart()
     SetWebAlignment(gui, 0.5, 0.5)
     SetWebAnchors(gui, 0.5, 0.5, 0.5, 0.5)
     SetWebVisibility(gui, WEB_HIDDEN)
+    SetIgnoreMoveInput(true)
+    CallRemoteEvent("SetUIOpenStatus", true)
 end
 AddEvent("OnPackageStart", OnPackageStart)
 
 AddEvent("OnKeyPress", function(key)
     if infoUIHasBeenShow == false and startScreenLoaded then
-    SetWebVisibility(gui, WEB_HIDDEN)
-    CallRemoteEvent('hud:server:show')
-    CallRemoteEvent("InfoUI:Show")
+        SetWebVisibility(gui, WEB_HIDDEN)
+        CallRemoteEvent('hud:server:show')
+        CallRemoteEvent("InfoUI:Show")
         infoUIHasBeenShow = true
     end
 end)

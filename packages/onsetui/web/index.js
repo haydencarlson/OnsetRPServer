@@ -1,4 +1,3 @@
-
 var updateText = function(text) {
     var element = document.getElementById("header");
     element.innerHTML = text;
