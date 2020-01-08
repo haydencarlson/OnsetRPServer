@@ -11,6 +11,7 @@ local function OnPackageStart()
 end
 
 AddRemoteEvent("InfoUI:Show", function() 
+
     SetWebVisibility(infoui, WEB_VISIBLE)
     SetInputMode(INPUT_UI)
 end)
@@ -23,7 +24,7 @@ end)
 AddEvent("InfoUI:Close", function() 
     SetWebVisibility(infoui, WEB_HIDDEN)
     SetInputMode(INPUT_GAME)
-    if isPlayerCreated == false then
+    if not isPlayerCreated then
         CallRemoteEvent("ServerCharacterCreation")
     end
 end)

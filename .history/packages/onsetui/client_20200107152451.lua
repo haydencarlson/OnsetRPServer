@@ -18,12 +18,13 @@ AddEvent("OnKeyPress", function(key)
     CallRemoteEvent('hud:server:show')
     CallRemoteEvent("InfoUI:Show")
         infoUIHasBeenShow = true
+        SetInputMode(INPUT_GAMEUI)
     end
 end)
  
 AddEvent("OnWebLoadComplete", function(web)
+    startScreenLoaded = true
     if web == gui then
-        startScreenLoaded = true
         CallRemoteEvent("GetStartScreenData")
     end
 end)

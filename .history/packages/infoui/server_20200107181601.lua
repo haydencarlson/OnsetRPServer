@@ -3,5 +3,5 @@ AddCommand("info", function(player)
 end)
 
 AddRemoteEvent("SendIsCreatedToInfoUI", function(player, isCreated)
-    CallRemoteEvent(player, "InfoUI:PlayerCreated", isCreated)
+    CallRemoteEvent(player, "InfoUI:Show", isCreated)
   end)

@@ -1,5 +1,5 @@
 local gui = nil
-local infoUIHasBeenShow = false
+
 local startScreenLoaded = false
 
 local function OnPackageStart() 
@@ -13,17 +13,18 @@ end
 AddEvent("OnPackageStart", OnPackageStart)
 
 AddEvent("OnKeyPress", function(key)
-    if infoUIHasBeenShow == false and startScreenLoaded then
-    SetWebVisibility(gui, WEB_HIDDEN)
+
+
     CallRemoteEvent('hud:server:show')
     CallRemoteEvent("InfoUI:Show")
-        infoUIHasBeenShow = true
+
+        
     end
 end)
  
 AddEvent("OnWebLoadComplete", function(web)
+    startScreenLoaded = true
     if web == gui then
-        startScreenLoaded = true
         CallRemoteEvent("GetStartScreenData")
     end
 end)

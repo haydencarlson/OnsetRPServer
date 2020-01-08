@@ -22,8 +22,8 @@ AddEvent("OnKeyPress", function(key)
 end)
  
 AddEvent("OnWebLoadComplete", function(web)
+    startScreenLoaded = true
     if web == gui then
-        startScreenLoaded = true
         CallRemoteEvent("GetStartScreenData")
     end
 end)

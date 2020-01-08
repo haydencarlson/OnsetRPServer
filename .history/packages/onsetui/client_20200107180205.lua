@@ -18,6 +18,9 @@ AddEvent("OnKeyPress", function(key)
     CallRemoteEvent('hud:server:show')
     CallRemoteEvent("InfoUI:Show")
         infoUIHasBeenShow = true
+        if not isCreated then
+            CallRemoteEvent("ServerCharacterCreation")
+        end
     end
 end)
  
@@ -29,6 +32,7 @@ AddEvent("OnWebLoadComplete", function(web)
 end)
 
 local function showgui(message, playername)
+    AddPlayerChat("Inside showgui")
     ExecuteWebJS(gui, "updateText('" .. message .. "');")
     ExecuteWebJS(gui, "updateName('" .. playername .. "');")
     SetWebVisibility(gui, WEB_HITINVISIBLE)

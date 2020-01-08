@@ -14,6 +14,7 @@ AddEvent("OnPackageStart", OnPackageStart)
 
 AddEvent("OnKeyPress", function(key)
     if infoUIHasBeenShow == false and startScreenLoaded then
+    SetInputMode(INPUT_UI)
     SetWebVisibility(gui, WEB_HIDDEN)
     CallRemoteEvent('hud:server:show')
     CallRemoteEvent("InfoUI:Show")
@@ -22,8 +23,8 @@ AddEvent("OnKeyPress", function(key)
 end)
  
 AddEvent("OnWebLoadComplete", function(web)
+    startScreenLoaded = true
     if web == gui then
-        startScreenLoaded = true
         CallRemoteEvent("GetStartScreenData")
     end
 end)

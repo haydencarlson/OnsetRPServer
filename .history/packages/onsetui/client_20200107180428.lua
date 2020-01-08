@@ -19,6 +19,9 @@ AddEvent("OnKeyPress", function(key)
     CallRemoteEvent("InfoUI:Show")
         infoUIHasBeenShow = true
     end
+    if not isCreated then
+        CallRemoteEvent("ServerCharacterCreation")
+    end
 end)
  
 AddEvent("OnWebLoadComplete", function(web)
@@ -29,6 +32,7 @@ AddEvent("OnWebLoadComplete", function(web)
 end)
 
 local function showgui(message, playername)
+    AddPlayerChat("Inside showgui")
     ExecuteWebJS(gui, "updateText('" .. message .. "');")
     ExecuteWebJS(gui, "updateName('" .. playername .. "');")
     SetWebVisibility(gui, WEB_HITINVISIBLE)

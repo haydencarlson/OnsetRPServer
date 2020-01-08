@@ -29,6 +29,7 @@ AddEvent("OnWebLoadComplete", function(web)
 end)
 
 local function showgui(message, playername)
+    AddPlayerChat("Inside showgui")
     ExecuteWebJS(gui, "updateText('" .. message .. "');")
     ExecuteWebJS(gui, "updateName('" .. playername .. "');")
     SetWebVisibility(gui, WEB_HITINVISIBLE)
