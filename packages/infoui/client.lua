@@ -11,6 +11,7 @@ local function OnPackageStart()
 end
 
 AddRemoteEvent("InfoUI:Show", function() 
+    ShowMouseCursor(true)
     SetWebVisibility(infoui, WEB_VISIBLE)
     SetInputMode(INPUT_UI)
 end)
