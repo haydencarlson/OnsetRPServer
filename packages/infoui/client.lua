@@ -25,6 +25,7 @@ AddEvent("InfoUI:Close", function()
     SetWebVisibility(infoui, WEB_HIDDEN)
     SetIgnoreMoveInput(false)
     SetInputMode(INPUT_GAME)
+    ShowMouseCursor(false)
     CallRemoteEvent("SetUIOpenStatus", false)
     if isPlayerCreated == false then
         CallRemoteEvent("ServerCharacterCreation")
