@@ -3,11 +3,10 @@ local onsetrp = ImportPackage("onsetrp")
 local hudgui = nil
 
 local function OnPackageStart() 
-    hudgui = CreateWebUI(0.0, 0.0, 0.0, 0.0, 5, 16)
-    LoadWebFile(hudgui, "http://asset/" .. GetPackageName() .. "/web/index.html")
-    SetWebSize(hudgui, 1218, 1218)
-    SetWebAlignment(hudgui, 0.5, 0.5)
-    SetWebAnchors(hudgui, 0.5, 0.5, 0.5, 0.5)
+    hudgui = CreateWebUI(0,0,0,0,0, 16)
+	LoadWebFile(hudgui, "http://asset/" .. GetPackageName() .. "/web/index.html")
+    SetWebAlignment(hudgui, 0, 0)
+    SetWebAnchors(hudgui, 0, 0, 1, 1)
 	SetWebVisibility(hudgui, WEB_HIDDEN)
 
 end
