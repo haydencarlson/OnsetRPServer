@@ -29,3 +29,7 @@ var updateJob = function(text) {
         element.innerHTML = text.charAt(0).toUpperCase() + text.slice(1);
     }
 }
+var updateTime = function(text) {
+    var element = document.getElementById("time");
+    element.innerHTML = Number(text).toFixed(0) + ":00";
+}
