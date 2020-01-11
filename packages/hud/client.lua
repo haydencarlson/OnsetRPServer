@@ -24,6 +24,10 @@ AddRemoteEvent('hud:update', function(playername, hunger, thirst, cash, bank, jo
 	ExecuteWebJS(hudgui, "updateJob('Citizen');")
 	ExecuteWebJS(hudgui, "updateCash(" .. cash .. ");")
 	ExecuteWebJS(hudgui, "updateBank(" .. bank .. ");")
+	CreateTimer(function(time)
+		time = GetTime();
+			ExecuteWebJS(hudgui, "updateTime(" .. tostring(time) .. ");")
+		end, 300, time)
 end)
 
 AddRemoteEvent("RPNotify:HUDEvent", function(property, value) 

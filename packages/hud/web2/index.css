@@ -13,15 +13,15 @@ body {
 }   
 
 .hud-body {
-    width:100%;
-    /* border: 2px solid black; */
+    width:95%;
+    border: 2px solid black;
     overflow:hidden;
 }
 .hud {
     color: #ffffff;
     min-height: 40px;
     max-height: 40px;
-    min-width: 60%;
+    width: 55%;
     max-width: 60%;
     position: absolute;
     background-color: rgb(22, 22, 22);
@@ -30,10 +30,12 @@ body {
     border-top: solid 1px #333;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    left: 20%;
+    left: 22.5%;
     bottom: 0;
     text-align: center;
     overflow: hidden;
+
+    
 }
 .title {
     font-size: 18px;
@@ -99,45 +101,15 @@ border: 1px solid #5f0202;
 .time {
     border: 1px solid #007497;
 }
-
-@media screen and (max-width:1399px) and (min-width: 500px)  {
+@media screen and (min-width:1281px) and (max-width: 4000px)  {
 
     .hud {
-        max-width:75%;
-        min-width:66%;
-        left: 22%;
-        min-height: 30px;
-        max-height: 30px;
-        font-size: 12px;
+        width:70%;
+        right:10%;
         
     }
     #balanceimg {
-        margin-left: -10px
-    }
-    .title {
-        font-size: 14px;
-        line-height: 2.6em;
-        padding-right: 3px;
-        width: 100px;
-        min-width: 100px;
-    }
-    .btn {
-        max-height: 20px;
-        min-height: 20px;
-        min-width: 70px;
-        max-width: 85px;
-        padding-left: 4px;
-        padding-right: 4px;
-        line-height: 1.9em;
-        margin-left: 10px;
-        margin-top: 4.2px;
-        
-    }
-    #icon {
-        height: 16px;
-        width: 16px;
-        margin-bottom: -3px;
-        padding-right: 7px;  
+        margin-right:35px
     }
 
 }
