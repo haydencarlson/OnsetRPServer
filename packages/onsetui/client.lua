@@ -10,6 +10,7 @@ local function OnPackageStart()
     SetWebAnchors(gui, 0.5, 0.5, 0.5, 0.5)
     SetWebVisibility(gui, WEB_HIDDEN)
     SetIgnoreMoveInput(true)
+    StartCameraFade(1.0, 1.0, 10.0, RGB(0, 0, 0))
     CallRemoteEvent("SetUIOpenStatus", true)
 end
 AddEvent("OnPackageStart", OnPackageStart)
@@ -20,6 +21,7 @@ AddEvent("OnKeyPress", function(key)
         CallRemoteEvent('hud:server:show')
         CallRemoteEvent("InfoUI:Show")
         infoUIHasBeenShow = true
+        StartCameraFade(1.0, 0, 3.0, RGB(0, 0, 0))
     end
 end)
  
