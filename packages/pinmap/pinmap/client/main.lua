@@ -1,7 +1,3 @@
-function OnScriptError(message) --Standard copy&paste code from onset lua script examples for printing out lua errors
-    AddPlayerChat('<span color="#ff0000bb" style="bold" size="10">'..message..'</>')
-end
-AddEvent("OnScriptError", OnScriptError)
 
 local mapGui = nil
 local miniMapGui = nil
