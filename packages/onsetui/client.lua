@@ -10,6 +10,7 @@ local function OnPackageStart()
     SetWebAnchors(gui, 0.5, 0.5, 0.5, 0.5)
     SetWebVisibility(gui, WEB_HIDDEN)
     SetIgnoreMoveInput(true)
+    StartCameraFade(1.0, 1.0, 3.0, RGB(0, 0, 0))
     CallRemoteEvent("SetUIOpenStatus", true)
 end
 AddEvent("OnPackageStart", OnPackageStart)
