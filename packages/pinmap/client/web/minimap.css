@@ -83,11 +83,11 @@ body
 
 #minimapdiv
 {
-    position:absolute; 
-    left:0px; 
-    top:0px; 
     margin: 0px; 
     padding:0px;
+    position: absolute; 
+    left:-1000px; 
+    top:-1000px;
 }
 
 #destinationmarker 

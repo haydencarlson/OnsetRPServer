@@ -21,7 +21,7 @@ AddEvent("OnKeyPress", function(key)
         CallRemoteEvent('hud:server:show')
         CallRemoteEvent("InfoUI:Show")
         infoUIHasBeenShow = true
-        StartCameraFade(1.0, 0, 3.0, RGB(0, 0, 0))
+        StartCameraFade(1.0, 0, 4.0, RGB(0, 0, 0))
     end
 end)
  
