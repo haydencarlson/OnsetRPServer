@@ -23,7 +23,7 @@ main {
 }
 
 #info-ui-header {
-  background-color: #3f72af;
+  background-color: #3684ff;
   height:50px;
   width:500px;
   display:flex;
@@ -36,14 +36,14 @@ main {
   flex-flow:column;
   width:100%;
   height:440px;
-  border-top: 2px solid #3f72af;
+  border-top: 2px solid #3684ff;
 }
 .info-ui-panel-header {
   display: flex;
   justify-content:center;
   align-items:center;
   color: white;
-  background-color: #3f72af;
+  background-color: #3684ff;
   text-align: center;
   width:100%;
   height:30px;
