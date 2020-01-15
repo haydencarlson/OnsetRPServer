@@ -17,17 +17,14 @@ AddEvent('OnWebLoadComplete', function(web)
 	end
 end)
 
-AddRemoteEvent('hud:update', function(playername, hunger, thirst, cash, bank, job)
+AddRemoteEvent('hud:update', function(playername, hunger, thirst, cash, bank, job, time)
 	ExecuteWebJS(hudgui, "updateName('" .. playername .. "');")
 	ExecuteWebJS(hudgui, "updateHunger(" .. hunger .. ");")
 	ExecuteWebJS(hudgui, "updateThirst(" .. thirst .. ");")
 	ExecuteWebJS(hudgui, "updateJob('Citizen');")
 	ExecuteWebJS(hudgui, "updateCash(" .. cash .. ");")
 	ExecuteWebJS(hudgui, "updateBank(" .. bank .. ");")
-	CreateTimer(function(time)
-		time = GetTime();
-			ExecuteWebJS(hudgui, "updateTime(" .. tostring(time) .. ");")
-		end, 300, time)
+	ExecuteWebJS(hudgui, "updateTime('" .. time .. "');")
 end)
 
 AddRemoteEvent("RPNotify:HUDEvent", function(property, value) 

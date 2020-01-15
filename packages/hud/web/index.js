@@ -31,5 +31,5 @@ var updateJob = function(text) {
 }
 var updateTime = function(text) {
     var element = document.getElementById("time");
-    element.innerHTML = Number(text).toFixed(0) + ":00";
+    element.innerHTML = text;
 }
