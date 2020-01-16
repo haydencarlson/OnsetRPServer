@@ -1,0 +1,16 @@
+{
+	"author": "Knid",
+	"version": "1.0",
+	"server_scripts": [
+		"server.lua"
+	],
+	"client_scripts": [
+		"client.lua",
+		"json.lua"
+	],
+	"files": [
+		"ui.html",
+		"ui.js",
+		"ui.css"
+	]
+}
