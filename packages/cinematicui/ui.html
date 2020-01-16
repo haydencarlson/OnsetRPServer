@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="ui.css">
+    </head>
+    <body>
+        <div class="cinematicui hiddenui" id="cinematicui">
+            <div class="first-line"></div>
+            <div class="second-line"></div>
+            <div class="messages">
+                <div class="arrow"></div>
+                <section class="from" id="from"></section>
+                <section class="mt message" id="message"></section>
+                <section class="mt buttons" id="actions"></section>
+            </div>
+        </div>
+        <script src="ui.js"></script>
+        <script>
+            if (window.ue) {
+                window.ue.game.callevent("CUIReady", "[]");
+            } else {
+                console.log("Callback: " + "CUIReady")
+            }
+        </script>
+    </body>
+</html>
