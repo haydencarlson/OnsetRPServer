@@ -22,7 +22,6 @@ AddEvent("OnKeyPress", function(key)
         CallRemoteEvent("InfoUI:Show")
         infoUIHasBeenShow = true
         StartCameraFade(1.0, 0, 4.0, RGB(0, 0, 0))
-        DestroyWebUI(gui)
     end
 end)
  
