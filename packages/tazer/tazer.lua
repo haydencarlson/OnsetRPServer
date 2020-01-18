@@ -5,7 +5,7 @@ function OnTazerShot(player, weapon, hittype, hitid, hitx, hity, hitz, startx, s
 				CallRemoteEvent(hitid, "LockControlMove", true)
 			Delay(8000, function(playerid) -- Waits 6 seconds before the player can stand up again
 				SetPlayerRagdoll(playerid, false) -- Disables the ragdoll so he can walk again.
-				CallRemoteEvent(playerid, "LockControlMove", true)
+				CallRemoteEvent(playerid, "LockControlMove", false)
 			end, hitid)
 		end        
 	end
