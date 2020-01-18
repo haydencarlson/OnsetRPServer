@@ -109,7 +109,7 @@ function setDialogSelectOptionsWithLabels(dialog, column, input, options)
     end
     dialogs[dialog].columns[column].inputs[input].options = options
 end
-function addDialogTextInput(dialog, column, label)
+function addDialogTextInput(dialog, column, label, default)
     if dialogs[dialog] == nil then
         return
     end
@@ -119,9 +119,15 @@ function addDialogTextInput(dialog, column, label)
             buttons = {}
         }
     end
+    
+    if defaulttext == nil then
+        defaulttext = nil
+    end
+    
     table.insert(dialogs[dialog].columns[column].inputs, {
         type = "text",
-        name = label
+        name = label,
+        defaulttext = default
     })
     return #dialogs[dialog].columns[column].inputs
 end
@@ -197,6 +203,9 @@ function showDialog(dialog)
                 }
                 if d.columns[j].inputs[i].name ~= nil then
                     json.columns[j].inputs[i].name = replaceVariables(d.columns[j].inputs[i].name, d.variables)
+                end
+                if d.columns[j].inputs[i].defaulttext ~= nil then
+                    json.columns[j].inputs[i].defaulttext = d.columns[j].inputs[i].defaulttext
                 end
                 if d.columns[j].inputs[i].options ~= nil then
                     json.columns[j].inputs[i].options = {}
