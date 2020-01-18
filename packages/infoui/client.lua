@@ -1,6 +1,6 @@
 local infoui = nil
 isPlayerCreated = true
-
+ 
 local function OnPackageStart() 
     infoui = CreateWebUI(0.0, 0.0, 0.0, 0.0, 5, 16)
     LoadWebFile(infoui, "http://asset/" .. GetPackageName() .. "/web/index.html")
