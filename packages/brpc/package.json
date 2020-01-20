@@ -11,7 +11,6 @@
             "web/index.html",
             "web/js/index.js",
             "web/js/bootstrap.min.js",
-            "web/js/fontawesome.min.js",
    	    "web/js/all.min.js",
             "web/js/jquery.dataTables.min.js",
             "web/js/jquery-3.3.1.slim.min.js",
