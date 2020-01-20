@@ -17,6 +17,13 @@ end)
 
 local function showpc()   
 	SetWebVisibility(pcui, WEB_VISIBLE)
-	SetInputMode(INPUT_UI)
+	SetInputMode(INPUT_GAMEANDUI)
 end
 AddRemoteEvent("pc:show", showpc)
+
+AddEvent("OnKeyPress", function( key )
+	if key == "C" then
+	SetWebVisibility(pcui, WEB_HIDDEN)
+	SetInputMode(INPUT_GAME)
+	end
+end)
