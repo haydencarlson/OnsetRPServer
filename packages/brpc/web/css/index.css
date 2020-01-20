@@ -120,7 +120,7 @@ color: white;
     background-color: #292929;
     border: 1px solid #807c7c00;
     border-radius: 3px;
-    line-height: 1em;
+    line-height: 0.1em;
     color: #d6d6d6;
     text-shadow: 1px 1px 5px black;
     transition: all 0.3s ease-in-out;
