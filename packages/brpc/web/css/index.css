@@ -2,7 +2,9 @@
 body {
     background-color: #05050500!important;
 }
-
+.noselect {
+              user-select: none;                                
+  }
 .frame {
     border-radius: 7px;
     min-width: 800px;
