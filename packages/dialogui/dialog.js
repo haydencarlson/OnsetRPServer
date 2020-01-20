@@ -62,6 +62,9 @@ function SetDialog(id, json) {
                         colElement.appendChild(inputElement);
                         rendered++;
                     }
+                    if(typeof jsonInput.defaulttext !== 'undefined'){
+                        inputElement.value = jsonInput.defaulttext;
+                    }
                     inputs.push(inputElement);
                 }
                 if (jsonInput.type === "select") {
