@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="http://asset/brpc/web/css/index.css">
     <link rel="stylesheet" href="http://asset/brpc/web/css/all.min.css">
     <link rel="stylesheet" href="http://asset/brpc/web/css/bootstrap.min.css">
-    <link rel="stylesheet" href="http://asset/brpc/web/css/jquery.dataTables.min.css">
     <title>BalanceRP Desktop</title>
 </head>
 <body class="noselect">
@@ -39,19 +38,16 @@
 
                   <div id="company-app-info"> <!-- Company info tab -->
                     <span><i class="fas fa-building"></i> <span id="company-name" style="border-bottom:1px solid #eee;font-size: 1.25rem;font-weight: 500;"></span></span>
-                      <span> <i class="fas fa-user-tie"></i> Company Owner: <span id="company-owner"></span></span>
-                      <br>
-                     <span><i class="fa fa-address-card"></i> Employees: <span id="company-employees"></span></span>
-                     <span><i class="fa fa-star"></i> Company Upgrades: <span id="company-upgrades"></span></span>
-                     <span><i class="fas fa-piggy-bank"></i> Company funds: <span id="company-account-balance"></span></span>
-                     <span><i class="fas fa-money-check-alt"></i> Earnings: <span id="company-wage"></span></span>
+                    <span> <i class="fas fa-user-tie"></i> Company Owner: <span id="company-owner"></span></span>
+                    <span><i class="fa fa-address-card"></i> Employees: <span id="company-employees"></span></span>
+                    <span><i class="fa fa-star"></i> Company Upgrades: <span id="company-upgrades"></span></span>
+                    <span><i class="fas fa-piggy-bank"></i> Company Bitcoin Funds: <span id="company-bitcoin-account-balance"></span></span>
                 </div>
 
                 <div id="owner-company-upgrades"> <!-- Company upgrades tab -->
                     <div class="form-group">
                         <label for="upgrades">Available upgrades</label>
                         <select multiple class="form-control" id="upgrades">
-                          <option></option>
                         </select>
                         <button id="upgradebtn" class="btn btn-light" style="text-align: center;">Buy Upgrade</button>
                       </div>
@@ -59,22 +55,18 @@
 
                 <div id="company-app-employees"> <!-- Company employees tab -->
                    <span><i class="fas fa-building"></i> <span id="company-name" style="font-size: 1.25rem;font-weight: 500;position: absolute;top:-0px;"></span></span>
-                    <table class="table table-sm table-employees" id="table-employees" style="text-align: center;">
+                      <h3 id="company-no-employees">You have no employees. Hire some first.</h3>
+                      <table class="table table-sm table-employees" id="table-employees" style="text-align: center;">
                         <thead>
                           <tr>
-                            <th scope="col">Employee name</th>
-                            <th scope="col">Pay amount</th>
-                            <th scope="col">Fire employee</th>
+                            <th>Employee name</th>
+                            <th>Pay amount</th>
+                            <th>Fire employee</th>
                           </tr>
                         </thead>
-                        <tbody>
-                          <tr>
-                            <td></td>
-                            <td></td>
-                            <td><button type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i></button></td>
-                          </tr>
+                        <tbody id="company-employees-tbody"> 
                         </tbody>
-                      </table>
+                    </table>
               </div>
 
               <div id="owner-company-hire"> <!-- Company hire tab -->
@@ -104,19 +96,6 @@
     <script src="http://asset/brpc/web/js/all.min.js"></script>
     <script src="http://asset/brpc/web/js/jquery-3.3.1.slim.min.js"></script>
     <script src="http://asset/brpc/web/js/popper.min.js"></script>
-    <script src="http://asset/brpc/web/js/jquery.dataTables.min.js"></script>
     <script src="http://asset/brpc/web/js/bootstrap.min.js"></script>
-    <script>
-    $(document).ready( function () {
-    $('#table-employees').DataTable();
-    } );
-    $.extend( $.fn.dataTable.defaults, {
-    searching: false,
-    ordering:  false,
-    lengthChange: false,
-    pageLength: 4,
-    info: false
-    } );
-    </script>
 </body>
 </html>

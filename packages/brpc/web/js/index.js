@@ -97,6 +97,44 @@ function HireEmployees() {
   }
 }
 
+function HydrateUI(data) {
+  pcdata = data
+  const PCData = data;
+  const companyEmployees = PCData.company.employees;
+  const companyUpgrades = PCData.company.upgrades;
+  const companyOwnerName = PCData.company.owner_name;
+  const companyBitcoinBalance = PCData.company.bitcoin_balance;
+  const availableUpgrades = [];
+  $('#upgrades').empty()
+  $('#company-employees-tbody').empty();
+  companyUpgrades.forEach((upgrade) => {
+    if (upgrade.available == "0") {
+      $('#upgrades').append(`
+        <option value=${upgrade.name} id='${upgrade.name}'>${upgrade.friendly_name}</option>
+      `);
+      availableUpgrades.push(upgrade.name);
+    }
+  });
+  const totalUpgrades = companyUpgrades.length - availableUpgrades.length;
+  $('#company-owner').text(companyOwnerName);
+  $('#company-employees').text(companyEmployees.length);
+  $('#company-upgrades').text(totalUpgrades);
+  $('#company-bitcoin-account-balance').text(`${companyBitcoinBalance} BTC`);
+  companyEmployees.forEach((employee) => {
+    $('#company-employees-tbody').append(`
+    <tr>
+      <td>${employee.name}</td>
+      <td>$5000</td>
+      <td><button type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i></button></td>
+    </tr>
+    `);
+  });
+  if (companyEmployees.length) {
+    $('#company-no-employees').hide();
+    $('#table-employees').show();
+  }
+}
+
 function CompanyTaskBar() {
   var x = document.getElementById('company-app');
   if (x.style.top === '40px') {

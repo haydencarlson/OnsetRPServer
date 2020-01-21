@@ -20,7 +20,6 @@ AddRemoteEvent("InfoUI:PlayerCreated", function(isCreated)
     isPlayerCreated = isCreated
 end)
 
-
 AddEvent("InfoUI:Close", function() 
     SetWebVisibility(infoui, WEB_HIDDEN)
     SetIgnoreMoveInput(false)

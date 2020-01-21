@@ -322,6 +322,7 @@ option:hover {
 }
 
 .table-employees {
+    display:none;
     color: #a7a7a7!important;
     background-color: #333;
     border-radius: 5%;

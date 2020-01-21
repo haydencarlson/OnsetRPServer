@@ -1,7 +1,7 @@
 local onsetrp = ImportPackage("onsetrp")
 
 local pcui = nil
-
+local pcUIOpen = false
 local function OnPackageStart() 
     pcui = CreateWebUI(0,0,0,0,0, 16)
 	LoadWebFile(pcui, "http://asset/" .. GetPackageName() .. "/web/index.html")
@@ -11,19 +11,30 @@ local function OnPackageStart()
 
 end
 AddEvent("OnPackageStart", OnPackageStart)
+
+AddRemoteEvent("BRPC:Show", function(PCData)
+	ExecuteWebJS(pcui, "HydrateUI(".. PCData ..");")
+	SetWebVisibility(pcui, WEB_VISIBLE)
+	SetInputMode(INPUT_GAMEANDUI)
+end)
+
 AddRemoteEvent('pc:update', function(time)
 	ExecuteWebJS(pcui, "updateTime('" .. time .. "');")
 end)
 
-local function showpc()   
-	SetWebVisibility(pcui, WEB_VISIBLE)
-	SetInputMode(INPUT_GAMEANDUI)
+local function FetchPCData()   
+	CallRemoteEvent("BRPC:FetchPCData")
 end
-AddRemoteEvent("pc:show", showpc)
+AddRemoteEvent("pc:show", FetchPCData)
+
 
 AddEvent("OnKeyPress", function( key )
-	if key == "C" then
-	SetWebVisibility(pcui, WEB_HIDDEN)
-	SetInputMode(INPUT_GAME)
+	if key == "F8" and pcUIOpen == false then
+		pcUIOpen = true
+		CallRemoteEvent("BRPC:FetchPCData")
+	elseif key == "F8" and pcUIOpen == true then 
+		pcUIOpen = false
+		SetWebVisibility(pcui, WEB_HIDDEN)
+		SetInputMode(INPUT_GAME)
 	end
 end)
