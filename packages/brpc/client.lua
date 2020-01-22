@@ -13,7 +13,7 @@ end
 AddEvent("OnPackageStart", OnPackageStart)
 
 AddRemoteEvent("BRPC:Show", function(PCData)
-	ExecuteWebJS(pcui, "HydrateUI(".. PCData ..");")
+	ExecuteWebJS(pcui, "HydrateUI('".. PCData .."');")
 	SetWebVisibility(pcui, WEB_VISIBLE)
 	SetInputMode(INPUT_GAMEANDUI)
 end)

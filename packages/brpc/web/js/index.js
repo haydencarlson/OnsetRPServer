@@ -99,7 +99,7 @@ function HireEmployees() {
 
 function HydrateUI(data) {
   pcdata = data
-  const PCData = data;
+  const PCData = JSON.parse(data);
   const companyEmployees = PCData.company.employees;
   const companyUpgrades = PCData.company.upgrades;
   const companyOwnerName = PCData.company.owner_name;
