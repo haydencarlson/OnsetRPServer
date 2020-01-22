@@ -100,6 +100,8 @@ function HireEmployees() {
 function HydrateUI(data) {
   pcdata = data
   const PCData = data;
+  const companyName = PCData.company.name;
+  const companyNameEmployee = PCData.company.name;
   const companyEmployees = PCData.company.employees;
   const companyUpgrades = PCData.company.upgrades;
   const companyOwnerName = PCData.company.owner_name;
@@ -116,6 +118,8 @@ function HydrateUI(data) {
     }
   });
   const totalUpgrades = companyUpgrades.length - availableUpgrades.length;
+  $('#company-name').text(companyName);
+  $('#company-name-employee').text(companyNameEmployee);
   $('#company-owner').text(companyOwnerName);
   $('#company-employees').text(companyEmployees.length);
   $('#company-upgrades').text(totalUpgrades);

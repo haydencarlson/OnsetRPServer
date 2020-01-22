@@ -12,13 +12,11 @@
             "web/js/index.js",
             "web/js/bootstrap.min.js",
    	    "web/js/all.min.js",
-            "web/js/jquery.dataTables.min.js",
             "web/js/jquery-3.3.1.slim.min.js",
             "web/js/popper.min.js",
             "web/css/index.css",
     	    "web/css/bootstrap.min.css",
    	    "web/css/all.min.css",
-    	    "web/css/jquery.dataTables.min.css",
             "web/images/company-icon.png",
             "web/images/bg.png"
     ]	

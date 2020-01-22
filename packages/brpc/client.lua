@@ -13,6 +13,8 @@ end
 AddEvent("OnPackageStart", OnPackageStart)
 
 AddRemoteEvent("BRPC:Show", function(PCData)
+	AddPlayerChat(PCData)
+	
 	ExecuteWebJS(pcui, "HydrateUI(".. PCData ..");")
 	SetWebVisibility(pcui, WEB_VISIBLE)
 	SetInputMode(INPUT_GAMEANDUI)
