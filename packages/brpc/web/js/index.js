@@ -99,13 +99,11 @@ function HireEmployees() {
 
 function HydrateUI(data) {
   pcdata = data
-<<<<<<< HEAD
-  const PCData = data;
+  const PCData = JSON.parse(data);
   const companyName = PCData.company.name;
   const companyNameEmployee = PCData.company.name;
-=======
-  const PCData = JSON.parse(data);
->>>>>>> 441a79f33ca115b9d7d012b6cce4408b6ea1b16f
+  const companyEmployeeId = PCData.company.employee_id;
+  const companyId = PCData.company.company_id;
   const companyEmployees = PCData.company.employees;
   const companyUpgrades = PCData.company.upgrades;
   const companyOwnerName = PCData.company.owner_name;
@@ -137,6 +135,19 @@ function HydrateUI(data) {
     </tr>
     `);
   });
+
+  if ((PCData.company.employee_id) === (PCData.company.company_id)) {
+    $('#company-app-employees').show();
+    $('#owner-company-hire').show();
+    $('#employees-nav').show();
+    $('#hire-employees-nav').show();
+      } else {
+    $('#company-app-employees').hide();
+    $('#owner-company-hire').hide();;
+    $('#employees-nav').hide();
+    $('#hire-employees-nav').hide();
+  }
+
   if (companyEmployees.length) {
     $('#company-no-employees').hide();
     $('#table-employees').show();
