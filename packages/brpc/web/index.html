@@ -17,51 +17,48 @@
     <title>BalanceRP Desktop</title>
 </head>
 <body class="noselect">
- 
+ <div class="container">
     <div class="frame">
         <p class="balrp"><i class="fas fa-balance-scale"></i> BalanceRP</p>
 
         <div class="screen">
             <!--                       --                   Starting desktop icons / buttons                      --                                    -->
-            <button type="button" class="iconbutton"  id="company-icon" onclick="showCompanyUI()">
+            <button type="button" class="iconbutton" id="company-app-icon" id="company-icon">
                 <img width="55" height="55" src="http://asset/brpc/web/images/company-icon.png">
                 <p>Company UI</p>
             </button>
             <!--                       --                   Ending desktop icons / buttons & Starting applications               --                     -->    
 
             <div id="company-app"> <!-- Starting Company application -->   
-              <button class="cbtn" onclick="TaskbarStart()"><i class="fas fa-times"></i></button> <!-- Company app close btns --> 
-              <button class="cbtn" id="cbtn2" onclick="showCompanyUI()"><i class="fas fa-window-restore"></i></button>
-              <button class="cbtn" id="cbtn3" onclick="CompanyTaskBar()"><i class="fas fa-minus"></i></button>
-
-      
+              <button class="cbtn" onclick="toggleCompanyUI()"><i class="fas fa-times"></i></button> <!-- Company app close btns --> 
               <div class="company-nav"> <!-- Company app nav --> 
                 <h5 id="title"><i class="fas fa-city"></i> Companies</h5>
-                <a href="#" style="border-top:1px solid #484848" onclick="CompanyInfo()"><i class="fas fa-building" aria-hidden="true"></i> My company</a>
-                <a href="#" onclick="CompanyUpgrades()"><i class="fa fa-star"></i> Upgrades</a>
-                <a href="#" onclick="CompanyEmployees()"><i class="fa fa-address-card"></i> Employees</a>
-                <a href="#" onclick="HireEmployees()"><i class="fa fa-user-plus"></i> Hire Employees</a>
+                <a href="#" id="company-info-nav" style="border-top:1px solid #484848"><i class="fas fa-building" aria-hidden="true"></i> My company</a>
+                <a href="#" id="upgrades-nav"><i class="fa fa-star"></i> Upgrades</a>
+                <a href="#" id="employees-nav"><i class="fa fa-address-card"></i> Employees</a>
+                <a href="#" id="hire-employees-nav"><i class="fa fa-user-plus"></i> Hire Employees</a>
               </div> 
 
-                  <div id="company-app-info"> <!-- Company info tab -->
-                    <span><i class="fas fa-building"></i> <span class="company-name" style="border-bottom:1px solid #eee;font-size: 1.25rem;font-weight: 500;"></span></span>
-                    <span> <i class="fas fa-user-tie"></i> Company Owner: <span id="company-owner"></span></span>
-                    <span><i class="fa fa-address-card"></i> Employees: <span id="company-employees"></span></span>
-                    <span><i class="fa fa-star"></i> Company Upgrades: <span id="company-upgrades"></span></span>
-                    <span><i class="fas fa-piggy-bank"></i> Company Bitcoin Funds: <span id="company-bitcoin-account-balance"></span></span>
-                </div>
+              <div id="company-app-info"> <!-- Company info tab -->
+                <span style="margin-bottom: 5px"><i class="fas fa-building"></i> <span id="company-name" style="border-bottom:1px solid #eee;font-size: 1.25rem;font-weight: 500;"></span></span>
+                <span><i class="fas fa-user-tie"></i> Company Owner: <span id="company-owner"></span></span>
+                <span><i class="fa fa-address-card"></i> Employees: <span id="company-employees"></span></span>
+                <span><i class="fa fa-star"></i> Company Upgrades: <span id="company-upgrades"></span></span>
+                <span><i class="fas fa-piggy-bank"></i> Company Bitcoin Funds: <span id="company-bitcoin-account-balance"></span></span>
+              </div>
 
-                <div id="owner-company-upgrades"> <!-- Company upgrades tab -->
-                    <div class="form-group">
-                        <label for="upgrades">Available upgrades</label>
-                        <select multiple class="form-control" id="upgrades">
-                        </select>
-                        <button id="upgradebtn" class="btn btn-light" style="text-align: center;">Buy Upgrade</button>
-                      </div>
+              <div id="owner-company-upgrades"> <!-- Company upgrades tab -->
+                <div class="form-group">
+                    <label for="upgrades">Available upgrades</label>
+                    <select multiple class="form-control" id="upgrades">
+                    </select>
+                    <button id="upgradebtn" class="btn btn-light" style="text-align: center;">Buy Upgrade</button>
                 </div>
+              </div>
 
                 <div id="company-app-employees"> <!-- Company employees tab -->
-                   <span><i class="fas fa-building"></i> <span class="company-name" style="font-size: 1.25rem;font-weight: 500;position: absolute;top:-0px;"></span></span>
+                  <div class="company-app-employees-content">
+                    <span style="font-size: 1.25rem;font-weight: 500;position: absolute;top:-0px; width: 100%;"><i class="fas fa-building"></i> <span class="ml-2"  id="company-name-employee" style="font-size: 1.25rem;font-weight: 500;position: absolute;top:-0px;"></span></span>
                       <h3 id="company-no-employees">You have no employees. Hire some first.</h3>
                       <table class="table table-sm table-employees" id="table-employees" style="text-align: center;">
                         <thead>
@@ -74,6 +71,7 @@
                         <tbody id="company-employees-tbody"> 
                         </tbody>
                     </table>
+                  </div>
               </div>
 
               <div id="owner-company-hire"> <!-- Company hire tab -->
@@ -84,7 +82,7 @@
                     </select>
                     <button id="hireEmployeeBtn" class="btn btn-light" style="text-align: center;">Hire employee</button>
                   </div>
-            </div>
+                </div>
               </div>
 
             </div> <!-- Ending company application -->  
@@ -93,10 +91,13 @@
             <div class="taskbar">
                 <div class="d-flex justify-content-between">
                     <p class="ml-2 taskbar-start"  onclick="TaskbarStart()">&nbsp;<i class="fab fa-windows"></i>&nbsp; Start</p>
-                    <p id="taskbar-company"  onclick="CompanyTaskBar()">&nbsp;<i class="fas fa-suitcase"></i>&nbsp; Company UI</p>
+                    <div id="taskbar-apps"></div>
                     <p class="mr-3 taskbar-time">🕛 <span id="time"></span></p>    
                 </div>
-            </div><!-- Ending taskbar -->  
+            </div><!-- Ending taskbar -->
+            <div id="taskbar-container">
+              <p id="taskbar-company"  onclick="CompanyTaskBar()">&nbsp;<i class="fas fa-suitcase"></i>&nbsp; Company UI</p>
+            </div>  
         </div><!-- Ending screen -->  
     </div><!-- Ending frame -->  
 </body>

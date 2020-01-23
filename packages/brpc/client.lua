@@ -33,7 +33,6 @@ end)
 
 AddRemoteEvent("BRPC:UpgradedCompany", function(upgrade)
 	ExecuteWebJS(pcui, "RemoveUpgradeFromSelect('" .. upgrade .. "')")
-	
 end)
 
 AddRemoteEvent('pc:update', function(time)
@@ -51,6 +50,7 @@ AddEvent("OnKeyPress", function( key )
 		pcUIOpen = true
 		CallRemoteEvent("BRPC:FetchPCData")
 	elseif key == "F8" and pcUIOpen == true then 
+		ShowMouseCursor(false)
 		pcUIOpen = false
 		SetWebVisibility(pcui, WEB_HIDDEN)
 		SetInputMode(INPUT_GAME)
