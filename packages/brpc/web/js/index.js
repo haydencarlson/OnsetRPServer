@@ -1,3 +1,25 @@
+let CallEvent;
+(function (obj) {
+  ue.game = {};
+  ue.game.callevent = function (name, ...args) {
+    if (typeof name != "string") {
+      return;
+    }
+
+    if (args.length == 0) {
+      obj.callevent(name, "")
+    } else {
+      let params = []
+      for (let i = 0; i < args.length; i++) {
+        params[i] = args[i];
+      }
+      obj.callevent(name, JSON.stringify(params));
+    }
+  };
+  CallEvent = ue.game.callevent;
+})(ue.game);
+
+
 function showCompanyUI() {
   var x = document.getElementById('company-app');
   var y = document.getElementById('taskbar-company');
@@ -96,17 +118,46 @@ function HireEmployees() {
     v.style.top = '-65px';
   }
 }
+$(function() {
+  $('#hireEmployeeBtn').on('click', function() {
+    var selected = $('#HireEmployee option:selected');
+    if (selected.length === 1) {
+      CallEvent("BRPC:HirePlayer", selected.val());
+    }
+  });
 
-function HydrateUI(data) {
-  pcdata = data
-  const PCData = JSON.parse(data);
-  const companyEmployees = PCData.company.employees;
-  const companyUpgrades = PCData.company.upgrades;
-  const companyOwnerName = PCData.company.owner_name;
-  const companyBitcoinBalance = PCData.company.bitcoin_balance;
-  const availableUpgrades = [];
+  $('#company-app-employees').on('click', '.firePlayerButton', function() {
+    let playerId = $(this).attr('data-account-id');
+    if (playerId) {
+      CallEvent("BRPC:FirePlayer", playerId)
+      let playerOption = $(`[data-employee-account-id=${playerId}]`);
+      playerOption.remove();
+    }
+  });
+
+  $('#upgradebtn').on('click', function () {
+    var selected = $('#upgrades option:selected');
+    if (selected.length === 1) {
+      CallEvent("BRPC:PurchaseUpgrade", selected.val())
+    }
+  });
+})
+
+function AddNearPlayerestHireSelect(nearPlayers) {
+  $('#HireEmployee').empty();
+  nearPlayers.forEach((player) => {
+    $('#HireEmployee').append(`
+        <option value=${player.id} id='${player.name}'>${player.name}</option>
+    `);
+  })
+}
+
+function RemoveUpgradeFromSelect(upgrade) {
+  $(`#${upgrade}`).remove();
+}
+
+function AddCompanyUpgradesToSelect(availableUpgrades, companyUpgrades) {
   $('#upgrades').empty()
-  $('#company-employees-tbody').empty();
   companyUpgrades.forEach((upgrade) => {
     if (upgrade.available == "0") {
       $('#upgrades').append(`
@@ -115,17 +166,16 @@ function HydrateUI(data) {
       availableUpgrades.push(upgrade.name);
     }
   });
-  const totalUpgrades = companyUpgrades.length - availableUpgrades.length;
-  $('#company-owner').text(companyOwnerName);
-  $('#company-employees').text(companyEmployees.length);
-  $('#company-upgrades').text(totalUpgrades);
-  $('#company-bitcoin-account-balance').text(`${companyBitcoinBalance} BTC`);
+}
+
+function AddCompanyEmployeesToTable(companyEmployees) {
+  $('#company-employees-tbody').empty();
   companyEmployees.forEach((employee) => {
     $('#company-employees-tbody').append(`
-    <tr>
+    <tr data-employee-account-id=${employee.id}>
       <td>${employee.name}</td>
-      <td>$5000</td>
-      <td><button type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i></button></td>
+      <td>${Number(employee.earn_percentage) * 100}%</td>
+      <td><button type="button" data-account-id="${employee.id}" class="btn btn-danger btn-sm firePlayerButton"><i class="fas fa-times-circle"></i></button></td>
     </tr>
     `);
   });
@@ -133,6 +183,28 @@ function HydrateUI(data) {
     $('#company-no-employees').hide();
     $('#table-employees').show();
   }
+}
+
+function HydrateUI(data) {
+  pcdata = data
+  const PCData = JSON.parse(data);
+  const companyEmployees = PCData.company.employees;
+  const companyUpgrades = PCData.company.upgrades;
+  const companyOwnerName = PCData.company.owner_name;
+  const companyBitcoinBalance = PCData.company.bitcoin_balance;
+  const nearPlayers = PCData.near_players;
+  const availableUpgrades = [];
+  const totalUpgrades = companyUpgrades.length - availableUpgrades.length;
+
+  AddNearPlayerestHireSelect(nearPlayers);
+  AddCompanyUpgradesToSelect(availableUpgrades, companyUpgrades);
+  AddCompanyEmployeesToTable(companyEmployees);
+
+  $('#company-owner').text(companyOwnerName);
+  $('#company-employees').text(companyEmployees.length);
+  $('#company-upgrades').text(totalUpgrades);
+  $('#company-bitcoin-account-balance').text(`${companyBitcoinBalance} BTC`);
+
 }
 
 function CompanyTaskBar() {

@@ -281,6 +281,11 @@ option:hover {
     transform: translate(50%, 50%);
     left: 100px;
 }
+#hireEmployeeBtn {
+    position: absolute;
+    transform: translate(50%, 50%);
+    left: 100px;
+}
 #company-app-employees {
     width: 450px;
     height: 245px;

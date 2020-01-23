@@ -13,9 +13,27 @@ end
 AddEvent("OnPackageStart", OnPackageStart)
 
 AddRemoteEvent("BRPC:Show", function(PCData)
+	ShowMouseCursor(true)
 	ExecuteWebJS(pcui, "HydrateUI('".. PCData .."');")
 	SetWebVisibility(pcui, WEB_VISIBLE)
 	SetInputMode(INPUT_GAMEANDUI)
+end)
+
+AddEvent("BRPC:PurchaseUpgrade", function(upgrade)
+	CallRemoteEvent("UpgradeCompany", upgrade)
+end)
+
+AddEvent("BRPC:HirePlayer", function(player) 
+	CallRemoteEvent("HirePlayer", player)
+end)
+
+AddEvent("BRPC:FirePlayer", function(player)
+	CallRemoteEvent("FirePlayer", player)
+end)
+
+AddRemoteEvent("BRPC:UpgradedCompany", function(upgrade)
+	ExecuteWebJS(pcui, "RemoveUpgradeFromSelect('" .. upgrade .. "')")
+	
 end)
 
 AddRemoteEvent('pc:update', function(time)
