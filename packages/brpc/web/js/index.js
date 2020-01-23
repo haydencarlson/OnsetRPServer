@@ -1,12 +1,13 @@
 function showCompanyUI() {
   var x = document.getElementById('company-app');
   var y = document.getElementById('taskbar-company');
-  if (x.style.top === '-4000px' | y.style.top === '50px') {
+  var IsInContainer = document.getElementById("taskbar-company").getElementsByClassName("taskbar-container")[0];
+  if (x.style.top === '-4000px' | IsInContainer) {
     x.style.top = '40px';
-    y.style.top = '0px'
+    $("#taskbar-company").appendTo("#taskbar-apps"); 
   } else {
     x.style.top = '-4000px';
-    y.style.top = '50px'
+    $("#taskbar-company").appendTo("#taskbar-container"); 
   }
 }
 
@@ -21,7 +22,7 @@ function TaskbarStart() {
     x.style.top = '-4000px';
     y.style.top = '-4000px';
     z.style.top = '4000px';
-    w.style.top = '50px';
+    $("#taskbar-company").appendTo("#taskbar-container");
     v.style.top = '-4000px';
     u.style.top = '4000px';
   }
@@ -158,8 +159,10 @@ function CompanyTaskBar() {
   var x = document.getElementById('company-app');
   if (x.style.top === '40px') {
     x.style.top = '-4000px';
+    $("#taskbar-company").appendTo("#taskbar-apps"); 
   } else {
     x.style.top = '40px';
+    $("#taskbar-company").appendTo("#taskbar-apps"); 
   }
 }
 

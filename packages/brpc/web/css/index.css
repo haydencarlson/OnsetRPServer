@@ -16,6 +16,7 @@ body {
     position: absolute;
     padding: 40px;
     border: 3px solid #48484885;
+    overflow: hidden;
 }
 
 .screen {
@@ -28,6 +29,7 @@ body {
     top: 50%;
     left: 50%;
     margin-left: -3px;
+    overflow: hidden;
 }
 .taskbar{
     color: #fff;
@@ -42,6 +44,7 @@ body {
     border-bottom: 1px solid #484848;
     position: absolute;
     overflow: hidden;
+    transition: all 0.5s ease-in-out;
 }
 .time {
     width: 100%;
@@ -53,7 +56,8 @@ body {
     border: 1px solid #444;
     margin-top: 5px;
     height: 15px;
-    width: 44px;
+    width: 50px;
+    margin-right: 10px;
     border-radius: 2px;
     font-size: 10px;
     line-height: 1em;
@@ -66,12 +70,10 @@ body {
     height: 15px;
     width: 80px;
     border-radius: 2px;
-    top: 50px;
-    left: 65px;
+    top: 0px;
     font-size: 10px;
     line-height: 1em;
     cursor: pointer;
-    position: absolute;
  }
 
 
@@ -81,7 +83,7 @@ body {
     margin-top: 5px;
     height: 15px;
     padding-left: 5px;
-    width: 55px;
+    width: 60px;
     border-radius: 2px;
     font-size: 10px;
     line-height: 1em;
@@ -131,6 +133,10 @@ color: white;
     top: 0;
     right: 12px;
     
+}
+#taskbar-container {
+    position: absolute;
+    top: -4000px;
 }
 #cbtn2 {
     right: 38px;
@@ -291,7 +297,9 @@ option:hover {
     width: 0px;  /* Remove scrollbar space */
     background: transparent;  /* Optional: just make scrollbar invisible */
 }
-
+#taskbar-apps {
+    width: 100%;
+}
 #company-app-employees {
     width: 450px;
     height: 245px;

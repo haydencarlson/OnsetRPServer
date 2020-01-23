@@ -10,13 +10,13 @@
     <title>BalanceRP Desktop</title>
 </head>
 <body class="noselect">
- 
+ <div class="container">
     <div class="frame">
         <p class="balrp"><i class="fas fa-balance-scale"></i> BalanceRP</p>
 
         <div class="screen">
             <!--                       --                   Starting desktop icons / buttons                      --                                    -->
-            <button type="button" class="iconbutton"  id="company-icon" onclick="showCompanyUI()">
+            <button type="button" class="iconbutton"  id="company-icon" ondblclick="showCompanyUI()">
                 <img width="55" height="55" src="http://asset/brpc/web/images/company-icon.png">
                 <p>Company UI</p>
             </button>
@@ -79,7 +79,7 @@
                     </select>
                     <button id="upgradebtn" class="btn btn-light" style="text-align: center;">Hire employee</button>
                   </div>
-            </div>
+                </div>
               </div>
 
             </div> <!-- Ending company application -->  
@@ -88,12 +88,16 @@
             <div class="taskbar">
                 <div class="d-flex justify-content-between">
                     <p class="ml-2 taskbar-start"  onclick="TaskbarStart()">&nbsp;<i class="fab fa-windows"></i>&nbsp; Start</p>
-                    <p id="taskbar-company"  onclick="CompanyTaskBar()">&nbsp;<i class="fas fa-suitcase"></i>&nbsp; Company UI</p>
+                    <div id="taskbar-apps"></div>
                     <p class="mr-3 taskbar-time">🕛 <span id="time"></span></p>    
                 </div>
-            </div><!-- Ending taskbar -->  
+            </div><!-- Ending taskbar -->
+            <div id="taskbar-container">
+              <p id="taskbar-company"  onclick="CompanyTaskBar()">&nbsp;<i class="fas fa-suitcase"></i>&nbsp; Company UI</p>
+            </div>  
         </div><!-- Ending screen -->  
-    </div><!-- Ending frame -->  
+      </div><!-- Ending frame --> 
+    </div> <!-- Ending container --> 
     <script src="http://asset/brpc/web/js/index.js"></script>
     <script src="http://asset/brpc/web/js/all.min.js"></script>
     <script src="http://asset/brpc/web/js/jquery-3.3.1.slim.min.js"></script>
