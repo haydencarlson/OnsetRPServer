@@ -31,6 +31,14 @@ AddEvent("BRPC:FirePlayer", function(player)
 	CallRemoteEvent("FirePlayer", player)
 end)
 
+AddEvent("BRPC:PayPlayer", function()
+	CallRemoteEvent("PayPlayer")
+end)
+
+AddRemoteEvent("BRPC:BitcoinPaid", function()
+	ExecuteWebJS(pcui, "SetBitcoinAvailable()")
+end)
+
 AddRemoteEvent("BRPC:UpgradedCompany", function(upgrade)
 	ExecuteWebJS(pcui, "RemoveUpgradeFromSelect('" .. upgrade .. "')")
 end)

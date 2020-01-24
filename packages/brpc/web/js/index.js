@@ -34,7 +34,7 @@ function toggleCompanyUI() {
 
 $(function() {
   let currentOpenElement = "company-app-info";
-
+  $('#company-payroll').hide();
   $('#company-info-nav').on('click', function() {
     $(`#${currentOpenElement}`).hide();
     $('#company-app-info').show();
@@ -57,6 +57,12 @@ $(function() {
     $(`#${currentOpenElement}`).hide();
     $('#owner-company-hire').show();
     currentOpenElement = "owner-company-hire";
+  });
+
+  $("#bitcoin-nav").on('click', function () {
+    $(`#${currentOpenElement}`).hide();
+    $('#company-payroll').show();
+    currentOpenElement = "company-payroll";
   });
 
   $('#company-app-icon').on('click', function() {
@@ -85,8 +91,15 @@ $(function() {
       CallEvent("BRPC:PurchaseUpgrade", selected.val())
     }
   });
+
+  $('#collect-bitcoin').on('click', function() {
+    CallEvent("BRPC:PayPlayer")
+  });
 })
 
+function SetBitcoinAvailable() {
+  $('#bitcoin-available-balance').text(`0.00000000 BTC`)
+}
 function AddNearPlayerestHireSelect(nearPlayers) {
   $('#HireEmployee').empty();
   nearPlayers.forEach((player) => {
@@ -125,10 +138,14 @@ function AddCompanyEmployeesToTable(companyEmployees) {
   });
 }
 
+function AddDataToBitcoinPay(availableBitcoin, totalBitcoin) {
+  $('#bitcoin-total-earned').text(`${totalBitcoin} BTC`)
+  $('#bitcoin-available-balance').text(`${availableBitcoin} BTC`)
+}
+
 function HydrateUI(data) {
   pcdata = data
   const PCData = JSON.parse(data);
-
   if (!PCData.company.employee_id && !PCData.company.company_id) {
     $('#company-app-info').hide();
     $('#company-info-nav').hide();
@@ -145,7 +162,8 @@ function HydrateUI(data) {
   const nearPlayers = PCData.near_players;
   const availableUpgrades = [];
   const totalUpgrades = companyUpgrades.length - availableUpgrades.length;
-  
+  const availableBitcoin = PCData.company.bitcoin_balance;
+  const totalBitcoin = PCData.company.bitcoin_total_earnings;
   // If player is employee
   if (PCData.company.employee_id) {
     $('#employees-nav').hide();
@@ -161,6 +179,7 @@ function HydrateUI(data) {
   AddNearPlayerestHireSelect(nearPlayers);
   AddCompanyUpgradesToSelect(availableUpgrades, companyUpgrades);
   AddCompanyEmployeesToTable(companyEmployees);
+  AddDataToBitcoinPay(availableBitcoin, totalBitcoin)
 
   $('#company-name').text(companyName);
   $('#company-owner').text(companyOwnerName);

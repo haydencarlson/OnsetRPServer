@@ -365,6 +365,31 @@ option:hover {
     transition: all 0.3s ease-in-out; 
 }
 
+#company-payroll {
+    display: inline-grid;
+    width: 450px;
+    height: 245px;
+    color: #a7a7a7;
+    position: absolute;
+    transform: translate(45%, 50%);
+    top: -65px;
+    padding: 30px 30px 30px 30px;
+    background-color: #292929;
+    border: 1px solid #5a5a5a;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px black;
+    transition: all 0.3s ease-in-out;
+}
+
+#company-payroll span {
+    text-align: center;
+    display:block;
+    margin-bottom:10px;
+}
+#company-payroll button {
+    text-align: center;
+}
+
 #owner-company-hire:hover {
     border: 1px solid #6f6f6f;
     transition: all 0.3s ease-in-out;
