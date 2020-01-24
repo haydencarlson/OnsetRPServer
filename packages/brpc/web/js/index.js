@@ -128,6 +128,15 @@ function AddCompanyEmployeesToTable(companyEmployees) {
 function HydrateUI(data) {
   pcdata = data
   const PCData = JSON.parse(data);
+
+  if (!PCData.company.employee_id && !PCData.company.company_id) {
+    $('#company-app-info').hide();
+    $('#company-info-nav').hide();
+    $('#employees-nav').hide();
+    $('#hire-employees-nav').hide();
+    $('#upgrades-nav').hide()
+    return;
+  }
   const companyEmployees = PCData.company.employees;
   const companyUpgrades = PCData.company.upgrades;
   const companyName = PCData.company.name;

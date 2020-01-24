@@ -226,6 +226,21 @@ color: white;
       display: inline-grid;
       transition: all 0.3s ease-in-out;
   }
+  #no-company-panel {
+      width: 450px;
+      height: 245px;
+      color: #a7a7a7;
+      position: absolute;
+      transform: translate(45%, 50%);
+      top: -65px;
+      padding: 30px 30px 30px 30px;
+      background-color: #292929;
+      border: 1px solid #5a5a5a;
+      border-radius: 3px;
+      box-shadow: 1px 1px 20px black;
+      display: inline-grid;
+      transition: all 0.3s ease-in-out;
+  }
   #company-app-info:hover {
       border: 1px solid #6f6f6f;
       transition: all 0.3s ease-in-out;
