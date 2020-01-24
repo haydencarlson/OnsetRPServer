@@ -144,7 +144,6 @@ function AddDataToBitcoinPay(availableBitcoin, totalBitcoin) {
 }
 
 function HydrateUI(data) {
-  pcdata = data
   const PCData = JSON.parse(data);
   if (!PCData.company.employee_id && !PCData.company.company_id) {
     $('#company-app-info').hide();
@@ -152,6 +151,7 @@ function HydrateUI(data) {
     $('#employees-nav').hide();
     $('#hire-employees-nav').hide();
     $('#upgrades-nav').hide()
+    $('#bitcoin-nav').hide()
     return;
   }
   const companyEmployees = PCData.company.employees;

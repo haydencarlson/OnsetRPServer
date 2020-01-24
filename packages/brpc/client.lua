@@ -53,10 +53,13 @@ end
 AddRemoteEvent("pc:show", FetchPCData)
 
 
+AddEvent("BRPC:StartOpen", function()
+	pcUIOpen = true
+	CallRemoteEvent("BRPC:FetchPCData")
+end)
 AddEvent("OnKeyPress", function( key )
 	if key == "F8" and pcUIOpen == false then
-		pcUIOpen = true
-		CallRemoteEvent("BRPC:FetchPCData")
+		CallEvent("BRPC:StartOpen")
 	elseif key == "F8" and pcUIOpen == true then 
 		ShowMouseCursor(false)
 		pcUIOpen = false
