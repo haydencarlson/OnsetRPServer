@@ -1,0 +1,6 @@
+AddCommand("showpc", function(player)
+    CallRemoteEvent(player, "pc:show")
+end)
+AddCommand("hidepc", function(player)
+    CallRemoteEvent(player, "pc:hide")
+end)

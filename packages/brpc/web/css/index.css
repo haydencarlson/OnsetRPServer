@@ -1,0 +1,432 @@
+
+body {
+    background-color: #05050500!important;
+}
+.noselect {
+              user-select: none;                                
+  }
+.frame {
+    border-radius: 7px;
+    min-width: 800px;
+    max-width: 800px;
+    background-color: #1b1b1b!important;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    padding: 40px;
+    border: 3px solid #48484885;
+    overflow: hidden;
+}
+
+.screen {
+    height: 360px;
+    min-width: 720px;
+    max-width: 720px;
+    overflow: hidden;
+    border: 1px solid #484848;
+    background-image: url(http://asset/brpc/web/images/bg.png);
+    top: 50%;
+    left: 50%;
+    margin-left: -3px;
+    overflow: hidden;
+}
+.taskbar{
+    color: #fff;
+    height: 25px;
+    width: 720px;
+    background-color: #101010;
+    transform: translate(-50%, -50%);
+    bottom: 27px;
+    left: 50%;
+    border-left: 1px solid #484848;
+    border-right: 1px solid #484848;
+    border-bottom: 1px solid #484848;
+    position: absolute;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+.time {
+    width: 100%;
+
+}
+
+.taskbar-start {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    margin-top: 5px;
+    height: 15px;
+    width: 50px;
+    margin-right: 10px;
+    border-radius: 2px;
+    font-size: 10px;
+    line-height: 1em;
+    cursor: pointer;
+ }
+ #taskbar-company {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    margin-top: 5px;
+    height: 15px;
+    width: 80px;
+    border-radius: 2px;
+    top: 0px;
+    font-size: 10px;
+    line-height: 1em;
+    cursor: pointer;
+ }
+
+
+.taskbar-time {
+    background-color: #1f1f1f;
+    border: 1px solid #444;
+    margin-top: 5px;
+    height: 15px;
+    padding-left: 5px;
+    width: 60px;
+    border-radius: 2px;
+    font-size: 10px;
+    line-height: 1em;
+}
+.balrp {
+    transform: translate(-50%, -50%);
+    top: 95.5%;
+    left: 50%;
+    color: #909090;
+    font-weight: bolder;
+    position: absolute;
+}
+.company-icon{
+text-align: center;
+width: 100px;
+height: 100px;
+margin: 25px;
+color: white;
+}
+.iconbutton {
+    margin: 25px!important;
+    background-color: #10101000!important;
+    border: none!important;
+    color: white!important;
+    text-shadow: 1px 1px 4px #000 !important;
+}
+.iconbutton:focus {
+    outline-color: transparent;
+    outline-style: none;
+  }
+.cbtn:focus {
+    outline-color: transparent;
+    outline-style: none;
+  }
+.cbtn {
+    height: 25px;
+    background-color: #292929;
+    border: 1px solid #807c7c00;
+    border-radius: 3px;
+    line-height: 0.1em;
+    color: #d6d6d6;
+    text-shadow: 1px 1px 5px black;
+    transition: all 0.3s ease-in-out;
+    position: absolute;
+    transform: translate(50%, 0%);
+    border-bottom: 1px solid #484848;
+    top: 0;
+    right: 12px;
+    
+}
+#taskbar-container {
+    position: absolute;
+    top: -4000px;
+}
+#cbtn2 {
+    right: 38px;
+    border-radius: 0px;
+}
+#cbtn3 {
+    right: 65px;
+    border-left: 1px solid #525252;
+}
+.cbtn:hover {
+    background-color: #353535;
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+#company-app {
+    display: none;
+    height: 360px;
+    min-width: 720px;
+    max-width: 720px;
+    overflow: hidden;
+    border: 1px solid #484848;
+    background-color: #333;
+    top: 40px;
+    left: 37px;
+    position: absolute;
+}
+
+#company-no-employees {
+    text-align: center;
+    margin-top: 50px;
+}
+.company-nav {
+    height: 100%;
+    width: 155px;
+    top: 0;
+    left: 0;
+    background-color: #292929;
+    overflow-x: hidden;
+    border-right: 1px solid #484848;
+    padding-top: 20px;
+  }
+  
+  .company-nav a {
+    padding: 12px 10px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    border-bottom: 1px solid #484848;
+ 
+    display: block;
+    font-size: 15px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .company-nav a:hover {
+    color: #f1f1f1;
+    text-decoration:none;
+    background-color: #212121;
+    transition: all 0.3s ease-in-out;
+
+  }
+  .company-nav a:focus {
+    box-shadow: none;
+    transition: all 0.3s ease-in-out;
+
+  }
+  #title {
+      color:#818181;
+      padding: 5%;
+  }
+  @media screen and (max-height: 450px) {
+    .company-nav {padding-top: 15px;}
+    .company-nav a {font-size: 18px;}
+  }
+  #company-app-info {
+      width: 450px;
+      height: 245px;
+      color: #a7a7a7;
+      position: absolute;
+      transform: translate(45%, 50%);
+      top: -65px;
+      padding: 30px 30px 30px 30px;
+      background-color: #292929;
+      border: 1px solid #5a5a5a;
+      border-radius: 3px;
+      box-shadow: 1px 1px 20px black;
+      display: inline-grid;
+      transition: all 0.3s ease-in-out;
+  }
+  #no-company-panel {
+      width: 450px;
+      height: 245px;
+      color: #a7a7a7;
+      position: absolute;
+      transform: translate(45%, 50%);
+      top: -65px;
+      padding: 30px 30px 30px 30px;
+      background-color: #292929;
+      border: 1px solid #5a5a5a;
+      border-radius: 3px;
+      box-shadow: 1px 1px 20px black;
+      display: inline-grid;
+      transition: all 0.3s ease-in-out;
+  }
+  #company-app-info:hover {
+      border: 1px solid #6f6f6f;
+      transition: all 0.3s ease-in-out;
+  }
+
+#owner-company-upgrades {
+    display:none;
+    width: 450px;
+    height: 245px;
+    color: #a7a7a7;
+    position: absolute;
+    transform: translate(45%, 50%);
+    top: -65px;
+    padding: 30px 30px 30px 30px;
+    background-color: #292929;
+    border: 1px solid #5a5a5a;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px black;
+    transition: all 0.3s ease-in-out;
+}
+#owner-company-upgrades:hover {
+    border: 1px solid #6f6f6f;
+    transition: all 0.3s ease-in-out;
+}
+.form-control:focus {
+    color: #495057!important;
+    background-color: #1f1e1e!important;
+    border-color: #414141!important;
+    outline: 0;
+    box-shadow: none!important;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: white!important;
+    background-color: #1f1f1f!important;
+    background-clip: padding-box;
+    border: 1px solid #5d5d5d!important;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    overflow: hidden;
+}
+option {
+    background-color: rgba(255, 255, 255, 0)
+}
+option:active {
+    background-color: rgb(58, 58, 58);
+    border: none;
+}
+option:focus {
+    background-color: rgb(58, 58, 58);
+    border: none;
+}
+option:hover {
+    background-color: rgb(73, 73, 73);
+    border: none;
+}
+
+#upgradebtn {
+    position: absolute;
+    transform: translate(50%, 50%);
+    left: 100px;
+}
+#hireEmployeeBtn {
+    position: absolute;
+    transform: translate(50%, 50%);
+    left: 100px;
+}
+
+.company-app-employees-content {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+#taskbar-apps {
+    width: 100%;
+}
+#company-app-employees {
+    display: none;
+    width: 450px;
+    height: 245px;
+    color: #a7a7a7;
+    position: absolute;
+    transform: translate(45%, 50%);
+    top: -65px;
+    padding: 30px 30px 30px 30px;
+    background-color: #292929;
+    border: 1px solid #5a5a5a;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px black;
+    transition: all 0.3s ease-in-out; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+#company-app-employees:hover {
+    border: 1px solid #6f6f6f;
+    transition: all 0.3s ease-in-out;
+}
+
+#owner-company-hire {
+    display: none;
+    width: 450px;
+    height: 245px;
+    color: #a7a7a7;
+    position: absolute;
+    transform: translate(45%, 50%);
+    top: -65px;
+    padding: 30px 30px 30px 30px;
+    background-color: #292929;
+    border: 1px solid #5a5a5a;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px black;
+    transition: all 0.3s ease-in-out; 
+}
+
+#company-payroll {
+    display: inline-grid;
+    width: 450px;
+    height: 245px;
+    color: #a7a7a7;
+    position: absolute;
+    transform: translate(45%, 50%);
+    top: -65px;
+    padding: 30px 30px 30px 30px;
+    background-color: #292929;
+    border: 1px solid #5a5a5a;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px black;
+    transition: all 0.3s ease-in-out;
+}
+
+#company-payroll span {
+    text-align: center;
+    display:block;
+    margin-bottom:10px;
+}
+#company-payroll button {
+    text-align: center;
+}
+
+#owner-company-hire:hover {
+    border: 1px solid #6f6f6f;
+    transition: all 0.3s ease-in-out;
+}
+
+.table-employees {
+    display:none;
+    color: #a7a7a7!important;
+    background-color: #333;
+    border-radius: 5%;
+}
+.table td, .table th {
+    vertical-align: top;
+    border-top: 1px solid #292929!important;
+}
+    th,
+    td,
+    thead th {
+      border-color: #484848!important;
+    }
+    tr {
+        background-color: #404040;
+        transition: all 0.3s ease-in-out;
+    }
+  
+    .table-bordered {
+      border: 0;
+    }
+  
+    .table-striped, tbody tr:nth-of-type(odd) {
+        background-color: #333!important;
+        transition: all 0.3s ease-in-out;
+    }
+  
+    .table-hover, tbody tr:hover {
+          color: #fff;
+          background-color: #404040!important;
+          border-left: 1px solid #ec0000!important; 
+          transition: all 0.3s ease-in-out;
+  }
