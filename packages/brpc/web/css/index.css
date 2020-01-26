@@ -152,17 +152,22 @@ color: white;
     transition: all 0.3s ease-in-out;
 }
 #company-app {
+    display: none;
     height: 360px;
     min-width: 720px;
     max-width: 720px;
     overflow: hidden;
     border: 1px solid #484848;
     background-color: #333;
-    top: -4000px;
+    top: 40px;
     left: 37px;
     position: absolute;
 }
 
+#company-no-employees {
+    text-align: center;
+    margin-top: 50px;
+}
 .company-nav {
     height: 100%;
     width: 155px;
@@ -221,24 +226,39 @@ color: white;
       display: inline-grid;
       transition: all 0.3s ease-in-out;
   }
+  #no-company-panel {
+      width: 450px;
+      height: 245px;
+      color: #a7a7a7;
+      position: absolute;
+      transform: translate(45%, 50%);
+      top: -65px;
+      padding: 30px 30px 30px 30px;
+      background-color: #292929;
+      border: 1px solid #5a5a5a;
+      border-radius: 3px;
+      box-shadow: 1px 1px 20px black;
+      display: inline-grid;
+      transition: all 0.3s ease-in-out;
+  }
   #company-app-info:hover {
       border: 1px solid #6f6f6f;
       transition: all 0.3s ease-in-out;
   }
 
-  #owner-company-upgrades {
+#owner-company-upgrades {
+    display:none;
     width: 450px;
     height: 245px;
     color: #a7a7a7;
     position: absolute;
     transform: translate(45%, 50%);
-    top: 4000px;
+    top: -65px;
     padding: 30px 30px 30px 30px;
     background-color: #292929;
     border: 1px solid #5a5a5a;
     border-radius: 3px;
     box-shadow: 1px 1px 20px black;
-    display: inline-grid;
     transition: all 0.3s ease-in-out;
 }
 #owner-company-upgrades:hover {
@@ -289,6 +309,12 @@ option:hover {
     transform: translate(50%, 50%);
     left: 100px;
 }
+#hireEmployeeBtn {
+    position: absolute;
+    transform: translate(50%, 50%);
+    left: 100px;
+}
+
 .company-app-employees-content {
   overflow-y: scroll;
   overflow-x: hidden;
@@ -301,12 +327,13 @@ option:hover {
     width: 100%;
 }
 #company-app-employees {
+    display: none;
     width: 450px;
     height: 245px;
     color: #a7a7a7;
     position: absolute;
     transform: translate(45%, 50%);
-    top: -4000px;
+    top: -65px;
     padding: 30px 30px 30px 30px;
     background-color: #292929;
     border: 1px solid #5a5a5a;
@@ -323,12 +350,13 @@ option:hover {
 }
 
 #owner-company-hire {
+    display: none;
     width: 450px;
     height: 245px;
     color: #a7a7a7;
     position: absolute;
     transform: translate(45%, 50%);
-    top: 4000px;
+    top: -65px;
     padding: 30px 30px 30px 30px;
     background-color: #292929;
     border: 1px solid #5a5a5a;
@@ -337,13 +365,38 @@ option:hover {
     transition: all 0.3s ease-in-out; 
 }
 
+#company-payroll {
+    display: inline-grid;
+    width: 450px;
+    height: 245px;
+    color: #a7a7a7;
+    position: absolute;
+    transform: translate(45%, 50%);
+    top: -65px;
+    padding: 30px 30px 30px 30px;
+    background-color: #292929;
+    border: 1px solid #5a5a5a;
+    border-radius: 3px;
+    box-shadow: 1px 1px 20px black;
+    transition: all 0.3s ease-in-out;
+}
+
+#company-payroll span {
+    text-align: center;
+    display:block;
+    margin-bottom:10px;
+}
+#company-payroll button {
+    text-align: center;
+}
+
 #owner-company-hire:hover {
     border: 1px solid #6f6f6f;
     transition: all 0.3s ease-in-out;
 }
 
 .table-employees {
-
+    display:none;
     color: #a7a7a7!important;
     background-color: #333;
     border-radius: 5%;

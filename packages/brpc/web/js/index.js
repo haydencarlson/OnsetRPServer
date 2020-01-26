@@ -1,117 +1,120 @@
-function showCompanyUI() {
-  var x = document.getElementById('company-app');
-  var y = document.getElementById('taskbar-company');
-  var IsInContainer = document.getElementById("taskbar-company").getElementsByClassName("taskbar-container")[0];
-  if (x.style.top === '-4000px' | IsInContainer) {
-    x.style.top = '40px';
-    $("#taskbar-company").appendTo("#taskbar-apps"); 
+let CallEvent;
+let companyAppDisplayed = false;
+(function (obj) {
+  ue.game = {};
+  ue.game.callevent = function (name, ...args) {
+    if (typeof name != "string") {
+      return;
+    }
+
+    if (args.length == 0) {
+      obj.callevent(name, "")
+    } else {
+      let params = []
+      for (let i = 0; i < args.length; i++) {
+        params[i] = args[i];
+      }
+      obj.callevent(name, JSON.stringify(params));
+    }
+  };
+  CallEvent = ue.game.callevent;
+})(ue.game);
+
+
+function toggleCompanyUI() {
+  if (!companyAppDisplayed) {
+    $('#taskbar-company').hide();
+    $('#company-app').show();
   } else {
-    x.style.top = '-4000px';
-    $("#taskbar-company").appendTo("#taskbar-container"); 
+    $('#taskbar-company').show();
+    $('#company-app').hide();
   }
+  companyAppDisplayed = !companyAppDisplayed
 }
 
-function TaskbarStart() {
-  var x = document.getElementById('company-app');
-  var y = document.getElementById('company-app-info');
-  var z = document.getElementById('owner-company-upgrades');
-  var w = document.getElementById('taskbar-company');
-  var v = document.getElementById('company-app-employees');
-  var u = document.getElementById('owner-company-hire');
-  if (x.style.top === '40px') {
-    x.style.top = '-4000px';
-    y.style.top = '-4000px';
-    z.style.top = '4000px';
-    $("#taskbar-company").appendTo("#taskbar-container");
-    v.style.top = '-4000px';
-    u.style.top = '4000px';
-  }
+$(function() {
+  let currentOpenElement = "company-app-info";
+  $('#company-payroll').hide();
+  $('#company-info-nav').on('click', function() {
+    $(`#${currentOpenElement}`).hide();
+    $('#company-app-info').show();
+    currentOpenElement = "company-app-info";
+  })
+
+  $("#upgrades-nav").on('click', function() {
+    $(`#${currentOpenElement}`).hide();
+    $('#owner-company-upgrades').show();
+    currentOpenElement = "owner-company-upgrades";
+  })
+
+  $("#employees-nav").on('click', function() {
+    $(`#${currentOpenElement}`).hide();
+    $('#company-app-employees').show();
+    currentOpenElement = "company-app-employees";
+  });
+
+  $("#hire-employees-nav").on('click', function() {
+    $(`#${currentOpenElement}`).hide();
+    $('#owner-company-hire').show();
+    currentOpenElement = "owner-company-hire";
+  });
+
+  $("#bitcoin-nav").on('click', function () {
+    $(`#${currentOpenElement}`).hide();
+    $('#company-payroll').show();
+    currentOpenElement = "company-payroll";
+  });
+
+  $('#company-app-icon').on('click', function() {
+    toggleCompanyUI();
+  });
+
+  $('#hireEmployeeBtn').on('click', function() {
+    var selected = $('#HireEmployee option:selected');
+    if (selected.length === 1) {
+      CallEvent("BRPC:HirePlayer", selected.val());
+    }
+  });
+
+  $('#company-app-employees').on('click', '.firePlayerButton', function() {
+    let playerId = $(this).attr('data-account-id');
+    if (playerId) {
+      CallEvent("BRPC:FirePlayer", playerId)
+      let playerOption = $(`[data-employee-account-id=${playerId}]`);
+      playerOption.remove();
+    }
+  });
+
+  $('#upgradebtn').on('click', function () {
+    var selected = $('#upgrades option:selected');
+    if (selected.length === 1) {
+      CallEvent("BRPC:PurchaseUpgrade", selected.val())
+    }
+  });
+
+  $('#collect-bitcoin').on('click', function() {
+    CallEvent("BRPC:PayPlayer")
+  });
+})
+
+function SetBitcoinAvailable() {
+  $('#bitcoin-available-balance').text(`0.00000000 BTC`)
 }
-function CompanyInfo() {
-var x = document.getElementById('company-app-info');
-var y = document.getElementById('owner-company-upgrades');
-var z = document.getElementById('company-app-employees');
-var v = document.getElementById('owner-company-hire');
-if (x.style.top === '-4000px' | y.style.top === "-65px" | z.style.top === "-65px" | v.style.top === '-65px') {
-  x.style.top = '-65px';
-  y.style.top = '4000px';
-  z.style.top = '-4000px';
-  v.style.top = '4000px';
-} else {
-  x.style.top = '-65px';
-  y.style.top = '4000px';
-  z.style.top = '-4000px';
-  v.style.top = '4000px';
-  }
+function AddNearPlayerestHireSelect(nearPlayers) {
+  $('#HireEmployee').empty();
+  nearPlayers.forEach((player) => {
+    $('#HireEmployee').append(`
+        <option value=${player.id} id='${player.name}'>${player.name}</option>
+    `);
+  })
 }
 
-function CompanyUpgrades() {
-  var y = document.getElementById('owner-company-upgrades');
-  var x = document.getElementById('company-app-info');
-  var z = document.getElementById('company-app-employees');
-  var v = document.getElementById('owner-company-hire');
-  if (x.style.top === '-65px' | y.style.top === "4000px" | z.style.top === "-65px" | v.style.top === '-65px') {
-    x.style.top = '-4000px';
-    y.style.top = '-65px';
-    z.style.top = '-4000px';
-    v.style.top = '4000px';
-  } else {
-    x.style.top = '-4000px';
-    y.style.top = '-65px';
-    z.style.top = '-4000px';
-    v.style.top = '4000px';
-  }
+function RemoveUpgradeFromSelect(upgrade) {
+  $(`#${upgrade}`).remove();
 }
 
-function CompanyEmployees() {
-  var y = document.getElementById('owner-company-upgrades');
-  var x = document.getElementById('company-app-info');
-  var z = document.getElementById('company-app-employees');
-  var v = document.getElementById('owner-company-hire');
-  if (x.style.top === '-65px' | y.style.top === "-65px" | z.style.top === "-4000px" | v.style.top === '-65px') {
-    x.style.top = '-4000px';
-    y.style.top = '4000px';
-    v.style.top = '4000px';
-    z.style.top = '-65px';
-  } else {
-    x.style.top = '-4000px';
-    y.style.top = '4000px';
-    v.style.top = '4000px';
-    z.style.top = '-65px';
-  }
-}
-function HireEmployees() {
-  var v = document.getElementById('owner-company-hire');
-  var y = document.getElementById('owner-company-upgrades');
-  var x = document.getElementById('company-app-info');
-  var z = document.getElementById('company-app-employees');
-  if (x.style.top === '-65px' | y.style.top === '-65px' | z.style.top === '-65px' | v.style.top === '4000px') {
-    x.style.top = '-4000px';
-    y.style.top = '4000px';
-    z.style.top = '-4000px';
-    v.style.top = '-65px';
-  } else {
-    x.style.top = '-4000px';
-    y.style.top = '4000px';
-    z.style.top = '-4000px';
-    v.style.top = '-65px';
-  }
-}
-
-function HydrateUI(data) {
-  pcdata = data
-  const PCData = JSON.parse(data);
-  const companyName = PCData.company.name;
-  const companyNameEmployee = PCData.company.name;
-  const companyEmployeeId = PCData.company.employee_id;
-  const companyId = PCData.company.company_id;
-  const companyEmployees = PCData.company.employees;
-  const companyUpgrades = PCData.company.upgrades;
-  const companyOwnerName = PCData.company.owner_name;
-  const companyBitcoinBalance = PCData.company.bitcoin_balance;
-  const availableUpgrades = [];
+function AddCompanyUpgradesToSelect(availableUpgrades, companyUpgrades) {
   $('#upgrades').empty()
-  $('#company-employees-tbody').empty();
   companyUpgrades.forEach((upgrade) => {
     if (upgrade.available == "0") {
       $('#upgrades').append(`
@@ -120,39 +123,70 @@ function HydrateUI(data) {
       availableUpgrades.push(upgrade.name);
     }
   });
-  const totalUpgrades = companyUpgrades.length - availableUpgrades.length;
-  $('#company-name').text(companyName);
-  $('#company-name-employee').text(companyNameEmployee);
-  $('#company-owner').text(companyOwnerName);
-  $('#company-employees').text(companyEmployees.length);
-  $('#company-upgrades').text(totalUpgrades);
-  $('#company-bitcoin-account-balance').text(`${companyBitcoinBalance} BTC`);
+}
+
+function AddCompanyEmployeesToTable(companyEmployees) {
+  $('#company-employees-tbody').empty();
   companyEmployees.forEach((employee) => {
     $('#company-employees-tbody').append(`
-    <tr>
+    <tr data-employee-account-id=${employee.id}>
       <td>${employee.name}</td>
-      <td>$5000</td>
-      <td><button type="button" class="btn btn-danger btn-sm"><i class="fas fa-times-circle"></i></button></td>
+      <td>${Number(employee.earn_percentage) * 100}%</td>
+      <td><button type="button" data-account-id="${employee.id}" class="btn btn-danger btn-sm firePlayerButton"><i class="fas fa-times-circle"></i></button></td>
     </tr>
     `);
   });
+}
 
-  if ((PCData.company.employee_id) === (PCData.company.company_id)) {
-    $('#company-app-employees').show();
-    $('#owner-company-hire').show();
-    $('#employees-nav').show();
-    $('#hire-employees-nav').show();
-      } else {
-    $('#company-app-employees').hide();
-    $('#owner-company-hire').hide();;
+function AddDataToBitcoinPay(availableBitcoin, totalBitcoin) {
+  $('#bitcoin-total-earned').text(`${totalBitcoin} BTC`)
+  $('#bitcoin-available-balance').text(`${availableBitcoin} BTC`)
+}
+
+function HydrateUI(data) {
+  const PCData = JSON.parse(data);
+  if (!PCData.company.employee_id && !PCData.company.company_id) {
+    $('#company-app-info').hide();
+    $('#company-info-nav').hide();
     $('#employees-nav').hide();
     $('#hire-employees-nav').hide();
+    $('#upgrades-nav').hide()
+    $('#bitcoin-nav').hide()
+    return;
+  }
+  const companyEmployees = PCData.company.employees;
+  const companyUpgrades = PCData.company.upgrades;
+  const companyName = PCData.company.name;
+  const companyOwnerName = PCData.company.owner_name;
+  const companyBitcoinBalance = PCData.company.bitcoin_balance;
+  const nearPlayers = PCData.near_players;
+  const availableUpgrades = [];
+  const totalUpgrades = companyUpgrades.length - availableUpgrades.length;
+  const availableBitcoin = PCData.company.bitcoin_balance;
+  const totalBitcoin = PCData.company.bitcoin_total_earnings;
+  // If player is employee
+  if (PCData.company.employee_id) {
+    $('#employees-nav').hide();
+    $('#hire-employees-nav').hide();
+    $('#upgrades-nav').hide()
   }
 
   if (companyEmployees.length) {
     $('#company-no-employees').hide();
     $('#table-employees').show();
   }
+
+  AddNearPlayerestHireSelect(nearPlayers);
+  AddCompanyUpgradesToSelect(availableUpgrades, companyUpgrades);
+  AddCompanyEmployeesToTable(companyEmployees);
+  AddDataToBitcoinPay(availableBitcoin, totalBitcoin)
+
+  $('#company-name').text(companyName);
+  $('#company-owner').text(companyOwnerName);
+  $('#company-employees').text(companyEmployees.length);
+  $('#company-upgrades').text(totalUpgrades);
+  $('#company-bitcoin-account-balance').text(`${companyBitcoinBalance} BTC`);
+
 }
 
 function CompanyTaskBar() {
