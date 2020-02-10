@@ -33,3 +33,7 @@ var updateTime = function(text) {
     var element = document.getElementById("time");
     element.innerHTML = text;
 }
+var updateTimeplayed = function(text) {
+    var element = document.getElementById("timeplayed");
+    element.innerHTML = text;
+}

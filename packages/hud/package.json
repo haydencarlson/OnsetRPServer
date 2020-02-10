@@ -18,6 +18,7 @@
             "web/images/cash.png",
             "web/images/bank.png",
             "web/images/balance.png",
-	    "web/images/time.png"
+            "web/images/time.png",
+            "web/images/timeplayed.png"
     ]	
 }
