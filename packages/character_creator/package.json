@@ -1,0 +1,18 @@
+{
+    "author": "openface",
+    "version": "1.0",
+    "client_scripts": [
+        "client.lua"
+    ],
+    "server_scripts": [
+        "server.lua",
+        "json.lua"
+    ],
+    "files": [
+        "ui/index.html",
+        "ui/characterize.js",
+        "ui/jquery.js",
+        "ui/style.css",
+        "click.wav"
+    ]
+}
