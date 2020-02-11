@@ -20,6 +20,7 @@ AddEvent("OnKeyPress", function(key)
         SetWebVisibility(gui, WEB_HIDDEN)
         CallRemoteEvent('hud:server:show')
         CallRemoteEvent("InfoUI:Show")
+        DestroyWebUI(gui)
         infoUIHasBeenShow = true
         StartCameraFade(1.0, 0, 4.0, RGB(0, 0, 0))
     end

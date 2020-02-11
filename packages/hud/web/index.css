@@ -21,8 +21,8 @@ body {
     color: #ffffff;
     min-height: 40px;
     max-height: 40px;
-    min-width: 60%;
-    max-width: 60%;
+    min-width: 50%;
+    max-width: 80%;
     position: absolute;
     background-color: rgb(22, 22, 22);
     border-left:solid 1px #333;
@@ -30,10 +30,11 @@ body {
     border-top: solid 1px #333;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    left: 20%;
+    left: 23%;
     bottom: 0;
     text-align: center;
     overflow: hidden;
+    padding: 0px 15px 0px 15px;
 }
 .title {
     font-size: 18px;
@@ -99,13 +100,15 @@ border: 1px solid #5f0202;
 .time {
     border: 1px solid #007497;
 }
-
+.timeplayed {
+    border: 1px solid #01b2be;
+}
 @media screen and (max-width:1399px) and (min-width: 500px)  {
 
     .hud {
-        max-width:75%;
-        min-width:66%;
-        left: 22%;
+        max-width:90%;
+        min-width:75%;
+        left: 12%;
         min-height: 30px;
         max-height: 30px;
         font-size: 12px;
@@ -125,7 +128,7 @@ border: 1px solid #5f0202;
         max-height: 20px;
         min-height: 20px;
         min-width: 70px;
-        max-width: 85px;
+        max-width: 100px;
         padding-left: 4px;
         padding-right: 4px;
         line-height: 1.9em;
