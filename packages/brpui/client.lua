@@ -19,8 +19,28 @@ AddEvent("Hide:BRPUI", function()
     SetInputMode(INPUT_GAME)
 end)
 
+AddEvent("BRPUI:CancelHit", function()
+    SetWebVisibility(brpui, WEB_HIDDEN)
+    ShowMouseCursor(false)
+    SetInputMode(INPUT_GAME)
+end)
+
+AddEvent("BRPUI:AcceptHit", function(targetId, amount, requestId)
+    SetWebVisibility(brpui, WEB_HIDDEN)
+    ShowMouseCursor(false)
+    SetInputMode(INPUT_GAME)
+    CallRemoteEvent("Hitman:AcceptJob", targetId, amount, requestId)
+end)
+
 AddRemoteEvent("JobSelectionSetup", function()
     ExecuteWebJS(brpui, "JobSelectSetup()")
+end)
+
+AddRemoteEvent("BRPUI:ShowHitmanRequestedHit", function(requestName, amount, targetName, targetJob, targetId, requestId)
+    SetWebVisibility(brpui, WEB_VISIBLE)
+    ShowMouseCursor(true)
+    SetInputMode(INPUT_UI)
+    ExecuteWebJS(brpui, "ShowHitmanRequestedHit('" .. requestName .. "', '" .. amount .. "', '" .. targetName .."', '" .. targetJob .. "', '" .. targetId .. "', '" .. requestId .. "')")
 end)
 
 AddRemoteEvent("AddJobToJobSelection", function(job)

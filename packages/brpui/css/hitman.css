@@ -1,0 +1,128 @@
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; 
+}
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+#hitman-job-header {
+  height: 60px;
+}
+#hitman-job-container {
+  display: none;
+  position: relative;
+  width:350px;
+  height: 250px;
+  background-color: #2E2A29;
+}
+h3 {
+  padding-top: 20px;          
+  text-align: center;
+  color: white;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  flex-flow: column;
+  align-items: center;
+}
+li {
+  height: 50px;
+  width: 245px;
+  display: flex;
+  flex-flow: column;
+  background-color: #3684ff;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+#hitman-job-selection {
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#hitman-available-jobs {
+  height: 240px;
+  margin: 0;
+  overflow-y: scroll;
+}
+.hitman-available-job-container {
+  color: white;
+  height: 100%;
+  display: flex;
+  flex-flow:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hitman-available-job-container:hover {
+  background-color: #171616;
+}
+
+#hitman-job-select {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.hitman-button {
+  cursor: pointer;
+  height: 45px;
+  width: 95px;
+  border:none;
+  color: white;
+  background-color: #3c3c3c;
+}
+
+.hitman-button:hover {
+  background-color: #3684ff;
+}
+.hitman-job-selected {
+  background-color: #171616;
+}
+.hitman-button-disabled {
+  cursor: auto;
+}
+.hitman-button-disabled:hover {
+  background-color: #3c3c3c;
+}
+#hitman-job-title {
+  color: #3684ff;
+}
+#hitman-job-details {
+  height: 105px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: white;
+}
+.hitman-job-detail {
+  padding-bottom: 10px;
+}

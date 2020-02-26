@@ -3,7 +3,9 @@
         <script src="http://asset/brpui/js/jquery-3.3.1.slim.min.js"></script>
         <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="http://asset/brpui/css/jobSelection.css">
+        <link rel="stylesheet" href="http://asset/brpui/css/hitman.css">
         <script src="http://asset/brpui/js/jobSelection.js"></script>
+        <script src="http://asset/brpui/js/hitman.js"></script>
     </head>
     <body>
         <div id="job-selection-ui">
@@ -24,7 +26,6 @@
                 </div>
                 <div id="job-selection-job-items"></div>
             </div>
-    
             <div id="job-selection-infobar">
                 <h3 id="job-selection-title"></h3>
                 <p id="job-selection-description"></p>
@@ -35,6 +36,29 @@
                 <button id="job-selection-continue">
                     Continue
                 </button>
+            </div>
+        </div>
+        <div id="hitman-job-container">
+            <div id="hitman-job-selection">
+                <div id="hitman-job-header">
+                    <h3 id="hitman-job-title">
+                        Requested Hit
+                    </h3>
+                </div>
+                <div id="hitman-job-details">
+                    <span class="hitman-job-detail" id="hitman-job-requester"></span>
+                    <span class="hitman-job-detail" id="hitman-job-amount"></span>
+                    <span class="hitman-job-detail" id="hitman-job-target"></span>
+                    <span class="hitman-job-detail" id="hitman-job-target-job"></span>
+                </div>
+                <div id="hitman-job-select">
+                    <button class="hitman-button hitman-accept-button">
+                        Accept
+                    </button>
+                    <button class="hitman-button hitman-cancel-button">
+                        Cancel
+                    </button>
+                </div>
             </div>
         </div>
     </body>
