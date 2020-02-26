@@ -69,6 +69,7 @@ $(function () {
         $('#job-selection-select-a-job').show();
         $('#job-info-job-commands-text').remove();
         $('#job-info-commands').empty();
+        $('#job-selection-ui').hide();
         CallEvent("SelectJob", selectedJob)
         CallEvent("Hide:BRPUI")
     });

@@ -9,6 +9,8 @@
     "files": [
         "css/jobSelection.css",
         "js/jobSelection.js",
+        "css/hitman.css",
+        "js/hitman.js",
         "ui/index.html",
         "js/jquery-3.3.1.slim.min.js"
     ]
